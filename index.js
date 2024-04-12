@@ -1,80 +1,61 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const mobileNavButton = document.querySelector(".s-mobile-nav-button");
   const mobileNavbar = document.querySelector(".s-mobile-navbar");
-  const mobileNavbarCancelButton = document.querySelector(".s-mobile-navbar-cancel-button");
+  const mobileNavbarCancelButton = document.querySelector(
+    ".s-mobile-navbar-cancel-button"
+  );
 
   mobileNavButton.addEventListener("click", function () {
-      mobileNavbar.style.display = mobileNavbar.style.display === "flex" ? "none" : "flex";
+    mobileNavbar.style.display =
+      mobileNavbar.style.display === "flex" ? "none" : "flex";
   });
   mobileNavbarCancelButton.addEventListener("click", function () {
-      mobileNavbar.style.display = "none";
+    mobileNavbar.style.display = "none";
   });
-
-
 
   var headings = document.querySelectorAll(".s-mobile-navlink-heading");
   headings.forEach(function (heading) {
-      heading.addEventListener("click", function () {
-          var clickedNavList = this.nextElementSibling;
-          var isAlreadyVisible = clickedNavList.classList.contains("s-visible");
-          var allNavLists = document.querySelectorAll(".s-mobile-nav-list.s-visible");
-          allNavLists.forEach(function (navList) {
-              if (navList !== clickedNavList) {
-                  navList.classList.remove("s-visible");
-                  var previousHeading = navList.previousElementSibling;
-                  var headingText = previousHeading.querySelector(".heading");
-                  var iconContainer = previousHeading.querySelector(".s-mobile-navlink-heading-icon");
-                  headingText.style.color = "";
-                  iconContainer.classList.remove("s-rotate");
-                  var svgIcon = iconContainer.querySelector("svg path");
-                  svgIcon.style.fill = "";
-              }
-          });
-          clickedNavList.classList.toggle("s-visible");
-          var headingText = this.querySelector(".heading");
-          var iconContainer = this.querySelector(".s-mobile-navlink-heading-icon");
+    heading.addEventListener("click", function () {
+      var clickedNavList = this.nextElementSibling;
+      var isAlreadyVisible = clickedNavList.classList.contains("s-visible");
+      var allNavLists = document.querySelectorAll(
+        ".s-mobile-nav-list.s-visible"
+      );
+      allNavLists.forEach(function (navList) {
+        if (navList !== clickedNavList) {
+          navList.classList.remove("s-visible");
+          var previousHeading = navList.previousElementSibling;
+          var headingText = previousHeading.querySelector(".heading");
+          var iconContainer = previousHeading.querySelector(
+            ".s-mobile-navlink-heading-icon"
+          );
+          headingText.style.color = "";
+          iconContainer.classList.remove("s-rotate");
           var svgIcon = iconContainer.querySelector("svg path");
-          if (clickedNavList.classList.contains("s-visible")) {
-              headingText.style.color = "#FFBF00";
-              iconContainer.classList.add("s-rotate");
-              svgIcon.style.fill = "#FFBF00";
-          } else {
-              headingText.style.color = "";
-              iconContainer.classList.remove("s-rotate");
-              svgIcon.style.fill = "";
-          }
-          if (isAlreadyVisible) {
-              headingText.style.color = "";
-              iconContainer.classList.remove("s-rotate");
-              svgIcon.style.fill = "";
-          }
+          svgIcon.style.fill = "";
+        }
       });
+      clickedNavList.classList.toggle("s-visible");
+      var headingText = this.querySelector(".heading");
+      var iconContainer = this.querySelector(".s-mobile-navlink-heading-icon");
+      var svgIcon = iconContainer.querySelector("svg path");
+      if (clickedNavList.classList.contains("s-visible")) {
+        headingText.style.color = "#FFBF00";
+        iconContainer.classList.add("s-rotate");
+        svgIcon.style.fill = "#FFBF00";
+      } else {
+        headingText.style.color = "";
+        iconContainer.classList.remove("s-rotate");
+        svgIcon.style.fill = "";
+      }
+      if (isAlreadyVisible) {
+        headingText.style.color = "";
+        iconContainer.classList.remove("s-rotate");
+        svgIcon.style.fill = "";
+      }
+    });
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Get the target div
 var circleDiv = document.querySelector(".p-circle-svg");
@@ -119,33 +100,3 @@ var observer = new IntersectionObserver(handleIntersect, options);
 
 // Start observing the target div
 observer.observe(circleDiv);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

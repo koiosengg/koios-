@@ -1613,20 +1613,20 @@
     border-image-slice: 1;
   }
 
-  .Software .s-mobile-nav-list{
-     border: 2px solid #fff;
+  .Software .s-mobile-nav-list {
+    border: 2px solid #fff;
     border-image: linear-gradient(
       to bottom,
-      #FFBF00 0%,
-      #FFBF00 70%,
+      #ffbf00 0%,
+      #ffbf00 70%,
       transparent 90%,
       transparent 100%
     );
     border-image-slice: 1;
   }
 
-  .Edutech .s-mobile-nav-list{
-         border: 2px solid #fff;
+  .Edutech .s-mobile-nav-list {
+    border: 2px solid #fff;
     border-image: linear-gradient(
       to bottom,
       #fff 0%,

@@ -1644,12 +1644,15 @@ li {
 .p-engineering-text,
 .p-engineering-text-s,
 .p-engineering-text-e {
+  display: flex;
+  flex-direction: column;
   color: #fff;
   font-family: Quicksand;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px; /* 133.333% */
+  gap: 24px;
 }
 
 .p-engineering-container p {

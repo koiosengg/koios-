@@ -1683,6 +1683,7 @@ li {
 }
 .p-know-more-container {
   width: 102px;
+  cursor: pointer;
 }
 .p-connection-container {
   display: flex;
@@ -2277,7 +2278,7 @@ span {
   line-height: 44px; /* 122.222% */
   letter-spacing: -0.72px;
 }
-.p-mobile-horizontal-line {
+.p-mobile-horizontal-line,.p-mobile-title-text-btn {
   display: none;
 }
 
@@ -2951,8 +2952,8 @@ span {
   .p-whyus-container {
     width: fit-content;
     margin-top: 0%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     gap: 32px;
     padding-bottom: 48px;
   }
@@ -3059,7 +3060,7 @@ span {
     );
     box-shadow: 0px 0px 15px 0px rgba(13, 155, 191, 0.1);
     display: flex;
-    height: 317px;
+    height:317px;
     padding: 20px;
     flex-direction: column;
     align-items: flex-start;
@@ -3090,7 +3091,7 @@ span {
     display: flex;
     padding: 20px;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: flex-start;
     gap: 24px;
   }
@@ -3114,10 +3115,9 @@ span {
     );
     box-shadow: 0px 0px 15px 0px rgba(13, 155, 191, 0.1);
     display: flex;
-    height: 337px;
+    height: 317px;
     padding: 20px;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     gap: 24px;
     flex-shrink: 0;
@@ -3776,7 +3776,39 @@ span {
     letter-spacing: 0.02em;
     text-align: center;
   }
-  
+  .p-mobile-title-text-btn{
+    display: flex;
+    flex-direction: column;
+    width: 295px;
+    gap: 16px;
+  }
+  .p-mobile-title-text-btn h1{
+    color: white;
+    font-family: Quicksand;
+font-size: 20px;
+font-weight: 600;
+line-height: 25px;
+text-align: left;
+  }
+  .p-mobile-title-text-btn h2{
+    color:  #D0D5DD;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    
+  }
+  .p-mobile-title-text-btn h3{
+    cursor: pointer;
+    color: #ffbf00;
+    font-family: Quicksand;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+
+  }
   /* Responsive footer */
   .p-footer {
     padding-left: 30px;

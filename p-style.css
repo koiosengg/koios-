@@ -1856,6 +1856,12 @@ li {
 .p-breadcrumb-text a:hover {
   color: #ffbf00;
 }
+.p-breadcrumb-text.blue a:hover {
+  color: #01cfdc;
+}
+.p-breadcrumb-text.white a:hover {
+  color: white;
+}
 span {
   color: var(--Woodsmoke----BG-400, #888);
 }
@@ -2330,7 +2336,7 @@ span {
   flex-direction: column;
   padding-bottom: 64px;
   padding-top: 32px;
-  
+
   font-family: Quicksand;
   font-size: 16px;
   font-weight: 400;
@@ -2338,7 +2344,7 @@ span {
   text-align: left;
   color: var(--gray---for-text-400, #98a2b3);
 }
-.p-links a{
+.p-links a {
   color: var(--gray---for-text-400, #98a2b3);
   text-decoration: none;
 }

@@ -110,6 +110,11 @@
   gap: 8px;
 }
 
+.s-dropdown-heading img{
+  width: 40px;
+height: 40px;
+}
+
 .s-dropdown-heading a {
   color: var(--Absolute-White, #fff);
   font-family: Quicksand;
@@ -369,7 +374,7 @@
   }
 }
 
-.s-product-banner-logo svg {
+.s-product-banner-logo img {
   width: 211px;
   height: 197px;
   flex-shrink: 0;
@@ -584,7 +589,6 @@
 .s-product-list-set-container {
   display: flex;
   width: 608px;
-  height: 456px;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
@@ -593,9 +597,84 @@
 .s-product-list-set-container img {
   object-fit: cover;
   width: 608px;
-  height: 283px;
-  background: #4e4e4e;
+  height: 300px;
 }
+
+.s-product-img-carousel{
+  display: flex;
+  width: 608px;
+  overflow: hidden;
+  position: relative;
+}
+
+.s-product-img-carousel img{
+  width: 608px;
+  flex-shrink: 0;
+}
+
+.s-slider {
+  width: 100%;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.s-slider img {
+    width: 608px;
+}
+
+.s-carousel-buttons.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.s-carousel-indicator{
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  position: absolute;
+  width: 30%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.s-carousel-indicator-container{
+  width: 30px;
+  height: 2px;
+  background: #c8c8c8;
+}
+
+.s-carousel-buttons{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-next-img{
+  padding-right: 10px;
+right: 0;
+}
+
+.s-previous-img{
+  padding-left: 10px;
+  left: 0;
+}
+
+.s-carousel-buttons svg{
+width: 30;
+height: 20px;
+  fill: #ffffff;
+}
+
+
 
 .s-product-list-set-container p {
   width: 608px;
@@ -818,8 +897,8 @@
 
 @keyframes slideFromLeftToCenter2 {
   0% {
-    transform: translateX(-40%);
-    scale: 0.95;
+    transform: translateX(-20%);
+    scale: 0.8;
     opacity: 0;
   }
   20% {
@@ -843,7 +922,7 @@
   right: 0;
   transform: translateX(-60%);
   z-index: 2;
-  animation: slideFromRightToLeft2 4.4s ease forwards;
+  animation: slideFromRightToLeft2 4.5s ease forwards;
 }
 @keyframes slideFromRightToLeft2 {
   0% {
@@ -860,8 +939,8 @@
     opacity: 1;
   }
   100% {
-    transform: translateX(-110%);
-    scale: 1.2;
+    transform: translateX(-80%);
+    scale: 1.1;
     opacity: 2;
   }
 }
@@ -1567,7 +1646,7 @@
     align-self: stretch;
   }
 
-  .s-mobile-navlink-heading p {
+  .s-mobile-navlink-heading a {
     color: var(--gray---for-text-25, #fcfcfd);
     text-align: center;
     font-family: Quicksand;
@@ -1575,6 +1654,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
+    text-decoration: none;
   }
 
   .s-mobile-navlink-heading svg {
@@ -1613,20 +1693,20 @@
     border-image-slice: 1;
   }
 
-  .Software .s-mobile-nav-list {
-    border: 2px solid #fff;
+  .Software .s-mobile-nav-list{
+     border: 2px solid #fff;
     border-image: linear-gradient(
       to bottom,
-      #ffbf00 0%,
-      #ffbf00 70%,
+      #FFBF00 0%,
+      #FFBF00 70%,
       transparent 90%,
       transparent 100%
     );
     border-image-slice: 1;
   }
 
-  .Edutech .s-mobile-nav-list {
-    border: 2px solid #fff;
+  .Edutech .s-mobile-nav-list{
+         border: 2px solid #fff;
     border-image: linear-gradient(
       to bottom,
       #fff 0%,
@@ -1748,7 +1828,7 @@
     align-items: center;
   }
 
-  .s-product-banner-logo svg {
+  .s-product-banner-logo img {
     width: 80px;
     height: 80px;
     flex-shrink: 0;
@@ -1973,8 +2053,13 @@
 
   .s-product-list-set-container img {
     width: 100%;
-    height: 180px;
+    height: 210px;
     align-self: stretch;
+  }
+  
+
+  .s-product-img-carousel{
+    width: 100%;
   }
 
   .s-product-list-set-container p {

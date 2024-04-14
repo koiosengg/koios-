@@ -1263,13 +1263,13 @@ li {
   font-weight: 500;
   line-height: normal;
 }
-.p-implementing-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 24px;
-  width: 950px;
-}
+  .p-implementing-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    width: 950px;
+  }
 .p-endless-solutions {
   color: var(--gray---for-text-300, #d0d5dd);
   text-align: center;
@@ -1279,7 +1279,7 @@ li {
   font-weight: 700;
   line-height: 30px; /* 125% */
 }
-.p-implemening-text {
+.p-implementing-text {
   height: 250px;
   text-align: center;
   font-family: "Allerta Stencil";

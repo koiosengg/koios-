@@ -1032,7 +1032,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 64px; */
   padding-bottom: 170px;
 }
 .p-get-started-btn {

@@ -620,6 +620,7 @@
 
 .s-slider img {
   width: 608px;
+  object-fit: cover;
 }
 
 .s-carousel-buttons.disabled {

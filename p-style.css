@@ -1023,6 +1023,8 @@ li {
   padding-top: 80px;
 }
 .p-home-heading {
+  justify-content: center;
+  height: 100vh;
   margin-top: -970px;
   padding-top: 142px;
   padding-left: 245px;
@@ -1034,6 +1036,8 @@ li {
   padding-bottom: 170px;
 }
 .p-get-started-btn {
+  width: 194px;
+  height: 56px;
   cursor: pointer;
   display: flex;
   padding: 16px 32px;
@@ -1060,11 +1064,10 @@ li {
   width: 100%;
   height: 100vh;
   background: #1a1a1a;
-  
 }
 
 .p-implemening-text p {
-margin: auto;
+  margin: auto;
   width: 950px;
   height: 245px;
   text-align: center;
@@ -1083,10 +1086,7 @@ margin: auto;
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: absolute; 
-}
-.particles-js-canvas-el{
-  height: 75% !important;
+  position: absolute;
 }
 .p-implementing-container {
   display: flex;

@@ -1042,6 +1042,7 @@ li {
   padding: 16px 32px;
   align-items: flex-start;
   gap: 8px;
+  justify-content: space-between;
   border-radius: 50px;
   border: 1px solid #ffbf00;
   background: var(--Grey-10, #1a1a1a);
@@ -1291,13 +1292,14 @@ li {
   border: 1px solid rgba(202, 255, 51, 0.1);
   background: linear-gradient(
       106deg,
-      rgba(255, 191, 0, 0.05) -29.45%,
+      rgba(255, 191, 0, 0.02) -29.45%, /* reduced the alpha value from 0.05 to 0.02 */
       rgba(255, 191, 0, 0) 27.86%
     ),
     linear-gradient(267deg, #1c1c1c 40.67%, rgba(28, 28, 28, 0) 99.81%),
     url(./assets/aboutus-koios-bg.png);
   background-blend-mode: normal, normal, screen;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
 }
 .p-card-row-top {
   display: flex;
@@ -1342,6 +1344,7 @@ li {
     rgba(255, 191, 0, 0.05) 0%,
     rgba(255, 191, 0, 0) 100%
   );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .p-benefits-svg-second-container.whyus {
   border-radius: 50px;
@@ -1350,6 +1353,7 @@ li {
     rgba(255, 191, 0, 0.1) -66.22%,
     rgba(255, 191, 0, 0) 85.46%
   );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .p-our-services-container {
   width: 800px;

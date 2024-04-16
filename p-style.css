@@ -1065,6 +1065,9 @@ li {
   height: 100vh;
   background: #1a1a1a;
 }
+.particles-js-canvas-el{
+  height: 95% !important;
+}
 
 .p-implemening-text p {
   margin: auto;

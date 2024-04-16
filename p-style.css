@@ -1087,7 +1087,7 @@ li {
     #0d9bbf 48.87%,
     #fff 87.19%
   );
-  -webkit-background-clip: text;
+  -webkit-background-clip-: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
 }

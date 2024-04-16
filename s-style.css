@@ -620,7 +620,6 @@
 
 .s-slider img {
   width: 608px;
-  object-fit: cover;
 }
 
 .s-carousel-buttons.disabled {
@@ -1435,7 +1434,9 @@
 .s-below-vision-container-bg {
   position: absolute;
 }
-
+.s-slider img {
+  width: 100%;
+}
 /* 404 Page */
 
 .s-404 {
@@ -2157,9 +2158,6 @@
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
-  }
-  .s-slider img {
-    width: 100%;
   }
   /* About US Page */
 

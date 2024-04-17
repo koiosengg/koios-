@@ -1021,11 +1021,14 @@ li {
 }
 .p-home {
   padding-top: 80px;
+  position: relative;
 }
 .p-home-heading {
+  position: relative;
+  z-index: 5;
   justify-content: center;
   height: 100vh;
-  margin-top: -970px;
+  /* margin-top: -970px; */
   padding-top: 142px;
   padding-left: 245px;
   padding-right: 245px;
@@ -1064,9 +1067,12 @@ li {
   width: 100%;
   height: 100vh;
   background: #1a1a1a;
+  position: absolute;
+  top: 0%;
 }
 .particles-js-canvas-el{
-  height: 95% !important;
+  width: 100%;
+  height: 100vh;
 }
 
 .p-implemening-text p {
@@ -1295,7 +1301,7 @@ li {
       rgba(255, 191, 0, 0.02) -29.45%, /* reduced the alpha value from 0.05 to 0.02 */
       rgba(255, 191, 0, 0) 27.86%
     ),
-    linear-gradient(267deg, #1c1c1c 40.67%, rgba(28, 28, 28, 0) 99.81%),
+    linear-gradient(267deg, #1c1c1c 40.67%, rgba(28, 28, 28, 0.5) 99.81%),
     url(./assets/aboutus-koios-bg.png);
   background-blend-mode: normal, normal, screen;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -1985,11 +1991,11 @@ span {
 }
 .p-rectangle-shape {
   width: 608px;
-  height: 300px;
+
 }
 .p-rectangle-shape img {
   width: 608px;
-  height: 300px;
+
 }
 .p-various-types {
   display: flex;
@@ -2459,6 +2465,7 @@ span {
     height: 175px;
   }
   .p-home-heading{
+    padding-top: 0;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -2505,6 +2512,10 @@ line-height: normal;
 
 /* For Small Screens */
 @media only screen and (max-width: 768px) {
+.particles-js-canvas-el{
+  width: 100%;
+  height: 100vh;
+}
   .p-text {
     padding-top: 0;
   }

@@ -1028,7 +1028,6 @@ li {
   z-index: 5;
   justify-content: center;
   height: 100vh;
-  /* margin-top: -970px; */
   padding-top: 142px;
   padding-left: 245px;
   padding-right: 245px;
@@ -1114,7 +1113,8 @@ li {
   line-height: 30px; /* 125% */
 }
 .p-implementing-text {
-  height: fit-content;
+
+  height: 210px;
   text-align: center;
   font-family: "Allerta Stencil";
   font-size: 85px;

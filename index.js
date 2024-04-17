@@ -147,10 +147,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  var element = document.getElementById('s-productBanner');
-  element.classList.add('s-logo-bg-software-visible');
-});
 
 
 

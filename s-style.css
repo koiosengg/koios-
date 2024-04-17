@@ -18,12 +18,15 @@
 }
 
 .s-logo-container {
+
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-
+.s-logo{
+  cursor: pointer;
+}
 .s-logo-container p {
   font-family: Inter;
   font-size: 16px;
@@ -535,6 +538,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
+  text-align: left;
 }
 
 .s-product-list {

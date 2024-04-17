@@ -1095,7 +1095,7 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 24px;
+  gap: 34px;
   width: 950px;
 }
 .p-endless-solutions {
@@ -1108,10 +1108,10 @@ li {
   line-height: 30px; /* 125% */
 }
 .p-implementing-text {
-  height: 250px;
+  height: fit-content;
   text-align: center;
   font-family: "Allerta Stencil";
-  font-size: 100px;
+  font-size: 85px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 120px */
@@ -2453,6 +2453,45 @@ span {
   .p-mobile-line.white {
     background: #e7e7e7;
   }
+  .p-implementing-text{
+    font-size: 70px;
+    width: 600px;
+    height: 175px;
+  }
+  .p-home-heading{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .p-implementing-container{
+    width: fit-content;
+    height: fit-content;
+  }
+  .p-get-started-btn{
+    display: flex;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+height: 36px;
+width: 335px;
+padding: 8px 18px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 50px;
+border: 1px solid #FFBF00;
+background: var(--Grey-10, #1A1A1A);
+  }
+  .p-get-started-btn p{
+    color: #FFBF00;
+text-align: center;
+font-family: Quicksand;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  }
+  .p-get-started-btn svg{
+    height: 11px;
+    width: 6px;
+  }
   .p-footer {
     padding-left: 90px;
     padding-right: 90px;
@@ -3409,6 +3448,28 @@ span {
     line-height: 20px;
     text-align: left;
   }
+  .p-implementing-text{
+    width: 335px;
+height: 166px;
+text-align: center;
+font-family: "Allerta Stencil";
+font-size: 44px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 52.8px */
+letter-spacing: -2.64px;
+text-transform: capitalize;
+background: linear-gradient(92deg, #FFBF00 17.84%, #0D9BBF 48.87%, #FFF 87.19%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  }
+  .p-implementing-container{
+    gap: 34px;
+  }
+  .particles-js-canvas-el {
+    height: 85% !important;
+}
 
   /* Responsive footer */
   .p-footer {

@@ -1928,7 +1928,6 @@ span {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-top: 20px;
 }
 .p-left-service-text p {
   width: 248px;

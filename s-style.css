@@ -110,9 +110,9 @@
   gap: 8px;
 }
 
-.s-dropdown-heading img{
+.s-dropdown-heading img {
   width: 40px;
-height: 40px;
+  height: 40px;
 }
 
 .s-dropdown-heading a {
@@ -571,7 +571,22 @@ height: 40px;
   font-weight: 700;
   line-height: normal;
 }
-
+.s-product-list-set-heading h2 {
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+}
+.subpage-desc{
+  color: var(--gray---for-text-400, #98A2B3) !important;
+font-family: Quicksand !important;
+font-size: 18px !important;
+font-style: normal !important;
+font-weight: 500 !important;
+line-height: 28px !important; 
+}
 .s-product-list-set-heading .heading {
   font-family: Quicksand;
   font-size: 16px;
@@ -584,7 +599,6 @@ height: 40px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .s-software-solutions .s-product-list-set-container {
   border-left: 2px solid #ffd24d;
@@ -600,7 +614,7 @@ height: 40px;
   padding-bottom: 40px;
   display: flex;
   width: 608px;
-height: calc(100% + 40px);
+  height: calc(100% + 40px);
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
@@ -612,34 +626,34 @@ height: calc(100% + 40px);
   height: 100%;
 }
 
-.s-product-img-carousel{
+.s-product-img-carousel {
   display: flex;
   width: 608px;
   overflow: hidden;
   position: relative;
 }
 
-.s-product-img-carousel img{
+.s-product-img-carousel img {
   width: 608px;
   flex-shrink: 0;
 }
 
 .s-slider {
   width: 100%;
-    display: flex;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
 }
 
 .s-slider img {
-    width: 608px;
+  width: 608px;
 }
 
 .s-carousel-buttons.disabled {
-    opacity: 0.5;
-    pointer-events: none;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
-.s-carousel-indicator{
+.s-carousel-indicator {
   left: 50%;
   transform: translateX(-50%);
   bottom: 10px;
@@ -652,41 +666,39 @@ height: calc(100% + 40px);
   gap: 5px;
 }
 
-.s-carousel-indicator-container{
+.s-carousel-indicator-container {
   width: 30px;
   height: 2px;
   background: #c8c8c8;
 }
 
-.s-carousel-buttons{
+.s-carousel-buttons {
   width: 40px;
   height: 40px;
   cursor: pointer;
   position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.s-next-img{
+.s-next-img {
   padding-right: 10px;
-right: 0;
+  right: 0;
 }
 
-.s-previous-img{
+.s-previous-img {
   padding-left: 10px;
   left: 0;
 }
 
-.s-carousel-buttons svg{
-width: 30px;
-height: 20px;
+.s-carousel-buttons svg {
+  width: 30px;
+  height: 20px;
   fill: #ffffff;
 }
-
-
 
 .s-product-list-set-container p {
   width: 608px;
@@ -726,7 +738,6 @@ height: 20px;
   justify-content: center;
   align-items: center;
 }
-
 
 .s-load-more {
   display: flex;
@@ -1104,8 +1115,6 @@ height: 20px;
   }
 }
 
-
-
 /*About Us Page */
 
 .s-aboutus-hero {
@@ -1126,7 +1135,9 @@ height: 20px;
   z-index: 0;
   top: 70px;
 }
-.s-logo{cursor: pointer;}
+.s-logo {
+  cursor: pointer;
+}
 .s-aboutus-logo {
   z-index: 10;
   width: 227px;
@@ -1566,7 +1577,6 @@ height: 20px;
     width: 35.838px;
     height: 32px;
   }
- 
 
   .s-nav-link {
     display: none;
@@ -1701,20 +1711,20 @@ height: 20px;
     border-image-slice: 1;
   }
 
-  .Software .s-mobile-nav-list{
-     border: 2px solid #fff;
+  .Software .s-mobile-nav-list {
+    border: 2px solid #fff;
     border-image: linear-gradient(
       to bottom,
-      #FFBF00 0%,
-      #FFBF00 70%,
+      #ffbf00 0%,
+      #ffbf00 70%,
       transparent 90%,
       transparent 100%
     );
     border-image-slice: 1;
   }
 
-  .Edutech .s-mobile-nav-list{
-         border: 2px solid #fff;
+  .Edutech .s-mobile-nav-list {
+    border: 2px solid #fff;
     border-image: linear-gradient(
       to bottom,
       #fff 0%,
@@ -2062,24 +2072,23 @@ height: 20px;
   }
 
   .s-software-solutions .s-product-list-set-container {
-  border-left: 0px solid #ffd24d;
-}
+    border-left: 0px solid #ffd24d;
+  }
 
-.s-engineering-solutions .s-product-list-set-container {
-  border-left: 0px solid #01cfdc;
-}
+  .s-engineering-solutions .s-product-list-set-container {
+    border-left: 0px solid #01cfdc;
+  }
 
   .s-product-list-set-container img {
     width: 100%;
     height: 100%;
     align-self: stretch;
   }
-  .s-slider img{
+  .s-slider img {
     width: 100%;
   }
-  
 
-  .s-product-img-carousel{
+  .s-product-img-carousel {
     width: 100%;
   }
 

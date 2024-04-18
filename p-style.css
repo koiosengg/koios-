@@ -1922,6 +1922,7 @@ span {
 }
 
 .p-various-types {
+  padding-top: 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1960,8 +1961,6 @@ span {
 }
 .p-service-offering p {
   color: #fff;
-
-  /* L - Text/Medium */
   font-family: Quicksand;
   font-size: 18px;
   font-style: normal;
@@ -2046,30 +2045,23 @@ span {
 .p-mobile-spotlight {
   display: none;
 }
-.p-parts-of-evec {
-  display: flex;
-  width: 100%;
-  padding: 60px 1012px 60px 200px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background: var(--Woodsmoke----BG-950----bg, #1a1a1a);
-}
-.p-parts-of-evec p {
-  padding-left: 6px;
-  color: var(--Woodsmoke----BG-200, #d1d1d1);
-  font-family: Quicksand;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 44px; /* 122.222% */
-  letter-spacing: -0.72px;
-}
+
 .p-mobile-horizontal-line,
 .p-mobile-title-text-btn {
   display: none;
 }
-
+.p-parts-of-evec-text{
+  color: var(--Woodsmoke----BG-200, #D1D1D1);
+font-family: Quicksand;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 44px; /* 122.222% */
+letter-spacing: -0.72px;
+}
+.p-parts-of-evec{
+  padding-left: 200px;
+}
 .p-footer {
   padding-top: 40px;
   padding-left: 160px;
@@ -2344,12 +2336,7 @@ span {
   .p-rectangle-text p {
     width: 100%;
   }
-  .p-parts-of-evec {
-    padding: 60px 571px 60px 195px;
-  }
-  .p-parts-of-evec p {
-    padding-left: 0;
-  }
+
   .p-various-types-text,
   .p-btm-line,
   .p-rectangle-text.edutech li {
@@ -3237,28 +3224,9 @@ span {
     padding: 8px 16px 8px 16px;
     gap: 8px;
     border-radius: 50px;
-
     margin-top: 11px;
   }
-  .p-parts-of-evec {
-    /* width: 335px; */
-    height: 24px;
-    align-items: center;
-    justify-content: center;
 
-    padding: 0;
-    /* margin-top: 24px; */
-    margin-bottom: 24px;
-  }
-  .p-parts-of-evec p {
-    margin: auto;
-    font-family: Quicksand;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-align: center;
-  }
   .p-mobile-title-text-btn {
     display: flex;
     flex-direction: column;

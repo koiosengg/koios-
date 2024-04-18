@@ -795,7 +795,6 @@ body {
 
 .p-text-main p,
 li {
-  text-align: justify;
   width: 100%;
   color: var(--Woodsmoke----BG-300, #b0b0b0);
   font-family: Quicksand;

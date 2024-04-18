@@ -137,10 +137,8 @@ body {
 
 .p-gear-vector svg{
   position: absolute;
-/* fill: radial-gradient(105.72% 102.32% at -9.01% 28.48%, rgba(26, 26, 26, 0.01) 0%, rgba(26, 26, 26, 0.01) 100%);
-stroke-width: 1px;
-stroke: rgba(255, 255, 255, 0.30);
-filter: drop-shadow(0px -20px 50px rgba(255, 255, 255, 0.20)); */
+
+overflow: hidden;
 }
 
 .p-contact-form {
@@ -399,6 +397,10 @@ filter: drop-shadow(0px -20px 50px rgba(255, 255, 255, 0.20)); */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.p-slide.six svg {
+  width: 100%;
+  height: 85px;
 }
 
 .p-logo-slider .p-slide p {
@@ -1866,7 +1868,7 @@ span {
   height: 36px;
 }
 .p-shopnow-btn p {
-  width: 95px !important;
+  width: 67px !important;
   color: var(--Woodsmoke----BG-950----bg, #1a1a1a) !important;
   text-align: center !important;
   font-family: Quicksand !important;
@@ -1925,6 +1927,7 @@ span {
 }
 
 .p-various-types {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -3221,11 +3224,9 @@ line-height: normal;
   }
   .p-various-types {
     padding-top: 28px;
-    width: 335px;
     gap: 16px;
   }
   .p-various-types-text {
-    width: 335px;
     color: var(--gray---for-text-400, #98a2b3);
     font-family: Quicksand;
     font-size: 18px;
@@ -3234,14 +3235,14 @@ line-height: normal;
     line-height: 28px; /* 155.556% */
   }
   .p-service-offering {
-    width: 335px;
+    width: 100%;
     gap: 16px;
   }
   .p-left-service-text,
   .p-line-p,
   .p-btm-line,
   .p-right-service-text {
-    width: 160px;
+    width: 100%;
   }
   .p-left-service-text,
   .p-right-service-text {

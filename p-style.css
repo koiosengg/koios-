@@ -135,10 +135,9 @@ body {
   flex-direction: column;
 }
 
-.p-gear-vector svg{
+.p-gear-vector svg {
   position: absolute;
-
-overflow: hidden;
+  overflow: hidden;
 }
 
 .p-contact-form {
@@ -402,7 +401,7 @@ overflow: hidden;
   width: 100%;
   height: 85px;
 }
-.p-slide.five img{
+.p-slide.five img {
   height: 80px;
 }
 
@@ -1088,7 +1087,7 @@ li {
   position: absolute;
   top: 0%;
 }
-.particles-js-canvas-el{
+.particles-js-canvas-el {
   width: 100%;
   height: 108vh;
 }
@@ -1138,13 +1137,10 @@ li {
   font-size: 85px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; 
-  letter-spacing: -6px; 
+  line-height: 120%;
+  letter-spacing: -6px;
 
   text-transform: capitalize;
-
-
-
 
   background: linear-gradient(
     92deg,
@@ -1335,14 +1331,14 @@ li {
   border: 1px solid rgba(202, 255, 51, 0.1);
   background: linear-gradient(
       106deg,
-      rgba(255, 191, 0, 0.02) -29.45%, /* reduced the alpha value from 0.05 to 0.02 */
-      rgba(255, 191, 0, 0) 27.86%
+      rgba(255, 191, 0, 0.02) -29.45%,
+      /* reduced the alpha value from 0.05 to 0.02 */ rgba(255, 191, 0, 0)
+        27.86%
     ),
     linear-gradient(267deg, #1c1c1c 40.67%, rgba(28, 28, 28, 0.5) 99.81%),
     url(./assets/aboutus-koios-bg.png);
   background-blend-mode: normal, normal, screen;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  
 }
 .p-card-row-top {
   display: flex;
@@ -1472,11 +1468,9 @@ li {
   align-self: stretch;
 }
 
-
 .p-engineering-title:hover svg path {
   fill: #fff;
 }
-
 
 .p-engineering-title p {
   color: var(--gray---for-text-500, #667085);
@@ -1809,7 +1803,6 @@ span {
   display: inline-block;
 }
 
-
 .p-md-heading.engineering {
   margin-top: -124px;
 }
@@ -1926,7 +1919,6 @@ span {
 }
 .p-rectangle-shape {
   width: 608px;
-
 }
 
 .p-various-types {
@@ -2316,7 +2308,7 @@ span {
   .p-back-career-button {
     display: none;
   }
-  .p-gear-vector svg{
+  .p-gear-vector svg {
     display: none;
   }
   .p-senior-full-stack-container {
@@ -2335,7 +2327,6 @@ span {
     padding-left: 20px;
     padding-right: 20px;
   }
-
 
   .p-text-div,
   .p-left-text-container {
@@ -2372,59 +2363,43 @@ span {
   .p-right-service-text {
     width: 50%;
   }
-  .p-mobile-horizontal-line {
-    display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .p-mobile-line {
-    background: #01cfdc;
-    width: 100%;
-    height: 1px;
-  }
-  .p-mobile-line.yellow {
-    background: #ffed46;
-  }
-  .p-mobile-line.white {
-    background: #e7e7e7;
-  }
-  .p-implementing-text{
+  .p-implementing-text {
     font-size: 70px;
     width: 600px;
     height: 175px;
   }
-  .p-home-heading{
+  .p-home-heading {
     padding-top: 0;
     padding-left: 0px;
     padding-right: 0px;
   }
-  .p-implementing-container{
+  .p-implementing-container {
     width: fit-content;
     height: fit-content;
   }
-  .p-get-started-btn{
+  .p-get-started-btn {
     display: flex;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
-height: 36px;
-width: 335px;
-padding: 8px 18px;
-justify-content: center;
-align-items: center;
-gap: 8px;
-border-radius: 50px;
-border: 1px solid #FFBF00;
-background: var(--Grey-10, #1A1A1A);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    height: 36px;
+    width: 335px;
+    padding: 8px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+    border: 1px solid #ffbf00;
+    background: var(--Grey-10, #1a1a1a);
   }
-  .p-get-started-btn p{
-    color: #FFBF00;
-text-align: center;
-font-family: Quicksand;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  .p-get-started-btn p {
+    color: #ffbf00;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
-  .p-get-started-btn svg{
+  .p-get-started-btn svg {
     height: 11px;
     width: 6px;
   }
@@ -2441,10 +2416,10 @@ line-height: normal;
 
 /* For Small Screens */
 @media only screen and (max-width: 768px) {
-.particles-js-canvas-el{
-  width: 100%;
-  height: 108vh;
-}
+  .particles-js-canvas-el {
+    width: 100%;
+    height: 108vh;
+  }
   .p-text {
     padding-top: 0;
   }
@@ -2699,7 +2674,6 @@ line-height: normal;
     line-height: normal;
   }
 
-  
   .p-hover-title-container {
     width: fit-content;
   }
@@ -3134,7 +3108,6 @@ line-height: normal;
     height: 11.18px;
   }
 
-
   .p-md-heading {
     gap: 40px;
     width: fit-content;
@@ -3144,29 +3117,6 @@ line-height: normal;
     padding-top: 0;
     margin: auto;
   }
-  .p-mobile-horizontal-line {
-    display: flex;
-    padding: 20px 0px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    align-self: stretch;
-  }
-  .p-mobile-line {
-    background: #01cfdc;
-    width: 335px;
-    height: 1px;
-  }
-  .p-mobile-line.yellow {
-    background: #ffed46;
-    width: 335px;
-    height: 1px;
-  }
-  .p-mobile-line.white {
-    background: #e7e7e7;
-  }
-
 
   .p-md-title,
   .p-text-div p,
@@ -3340,23 +3290,28 @@ line-height: normal;
     line-height: 20px;
     text-align: left;
   }
-  .p-implementing-text{
+  .p-implementing-text {
     width: 335px;
-height: 166px;
-text-align: center;
-font-family: "Allerta Stencil";
-font-size: 44px;
-font-style: normal;
-font-weight: 400;
-line-height: 120%; /* 52.8px */
-letter-spacing: -2.64px;
-text-transform: capitalize;
-background: linear-gradient(92deg, #FFBF00 17.84%, #0D9BBF 48.87%, #FFF 87.19%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    height: 166px;
+    text-align: center;
+    font-family: "Allerta Stencil";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 52.8px */
+    letter-spacing: -2.64px;
+    text-transform: capitalize;
+    background: linear-gradient(
+      92deg,
+      #ffbf00 17.84%,
+      #0d9bbf 48.87%,
+      #fff 87.19%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  .p-implementing-container{
+  .p-implementing-container {
     gap: 34px;
   }
 

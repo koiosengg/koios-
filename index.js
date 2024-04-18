@@ -1,3 +1,4 @@
+//Mobile Navbar
 document.addEventListener("DOMContentLoaded", function () {
   const mobileNavButton = document.querySelector(".s-mobile-nav-button");
   const mobileNavbar = document.querySelector(".s-mobile-navbar");
@@ -57,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//Svg in viewport animation
 // Get the target div
 var circleDiv = document.querySelector(".p-circle-svg");
 
@@ -103,7 +105,7 @@ observer.observe(circleDiv);
 
 
 
-
+//Image carousel
 
 window.addEventListener('DOMContentLoaded', function () {
   const carouselSets = document.querySelectorAll('.s-carousel-set');
@@ -142,14 +144,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
   shiftPositionClasses();
 });
-
-
-
-
-
-
-
-
 
 
 document.addEventListener('DOMContentLoaded', function () {

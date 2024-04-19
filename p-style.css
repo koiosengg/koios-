@@ -2525,13 +2525,14 @@ span {
   }
   .p-card-main {
     display: flex;
-    width: 335px;
+    width: 100%;
     padding: 20px 16px;
     align-items: flex-start;
     gap: 8px;
     height: 203px;
   }
   .p-cards-container {
+    width: 100%;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -2572,7 +2573,7 @@ span {
     display: none;
   }
   .p-our-services-container {
-    width: 335px;
+    width: 100%;
   }
   .p-our-services-text {
     color: var(--Amber-500----Primary, #ffbf00);
@@ -2594,7 +2595,7 @@ span {
     line-height: 24px; /* 150% */
   }
   .p-engineering-title {
-    width: 335px;
+    width: 100%;
     border-radius: 12px;
     border: 1px solid #0d9bbf;
     background: linear-gradient(
@@ -2662,7 +2663,7 @@ span {
   }
 
   .p-hover-title-container {
-    width: fit-content;
+    width: 100%;
   }
   .p-hover-tabs-container {
     width: 100%;
@@ -3230,7 +3231,7 @@ span {
   .p-mobile-title-text-btn {
     display: flex;
     flex-direction: column;
-    width: 295px;
+    width: 100%;
     gap: 16px;
   }
   .p-mobile-title-text-btn h1 {

@@ -1403,7 +1403,7 @@
 
 .s-vision .content .main {
   color: var(--gray---for-text-300, #d0d5dd);
-  text-align: justify;
+  text-align: center;
   font-family: Quicksand;
   font-size: 20px;
   font-style: normal;
@@ -2428,7 +2428,7 @@
 
   .s-vision .content .main {
     color: var(--Woodsmoke----BG-300, #b0b0b0);
-    text-align: justify;
+    text-align: center;
     font-family: Quicksand;
     font-size: 14px;
     font-style: normal;

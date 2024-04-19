@@ -138,6 +138,8 @@ body {
 .p-gear-vector svg {
   position: absolute;
   overflow: hidden;
+  width: calc(100% + 100px);
+  height: 1200px;
 }
 
 .p-contact-form {
@@ -1037,21 +1039,20 @@ li {
   line-height: normal;
 }
 .p-home {
+  height: 100vh;
   padding-top: 80px;
   position: relative;
 }
 .p-home-heading {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 5;
   justify-content: center;
-  height: 100vh;
-  padding-top: 142px;
-  padding-left: 245px;
-  padding-right: 245px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 170px;
 }
 .p-get-started-btn {
   width: 194px;
@@ -1423,15 +1424,15 @@ li {
   line-height: 32px;
 }
 .p-hover-tabs-container {
-  z-index: 5;
+  left: 50%;
+  width: 1040px;
+  top: 50%;
+  transform: translate(-50%);
   position: relative;
+  z-index: 5;
   gap: 40px;
   display: flex;
   flex-direction: row;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 .p-hover-text-container,
 .p-hover-title-container {
@@ -2302,6 +2303,7 @@ span {
   }
   .p-gear-vector svg {
     display: none;
+    width: 100%;
   }
   .p-senior-full-stack-container {
     padding-top: 50px;

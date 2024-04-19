@@ -403,6 +403,10 @@ body {
   width: 100%;
   height: 85px;
 }
+.p-slide.seven svg{
+  width: 100%;
+  height: 95px;
+}
 .p-slide.five img {
   height: 80px;
 }
@@ -1089,7 +1093,7 @@ li {
 }
 .particles-js-canvas-el {
   width: 100%;
-  height: 108vh;
+  height: 100vh;
 }
 
 .p-implemening-text p {
@@ -2407,7 +2411,7 @@ span {
 @media only screen and (max-width: 768px) {
   .particles-js-canvas-el {
     width: 100%;
-    height: 108vh;
+    height: 100vh;
   }
   .p-text {
     padding-top: 0;

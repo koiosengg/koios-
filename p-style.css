@@ -1507,7 +1507,8 @@ li {
   flex-direction: column;
   gap: 16px;
 }
-.p-know-more-text p {
+.p-know-more-text a {
+  text-decoration: none;
   color: #ffbf00;
   text-align: center;
   font-family: Quicksand;
@@ -2049,16 +2050,16 @@ span {
 .p-mobile-title-text-btn {
   display: none;
 }
-.p-parts-of-evec-text{
-  color: var(--Woodsmoke----BG-200, #D1D1D1);
-font-family: Quicksand;
-font-size: 36px;
-font-style: normal;
-font-weight: 600;
-line-height: 44px; /* 122.222% */
-letter-spacing: -0.72px;
+.p-parts-of-evec-text {
+  color: var(--Woodsmoke----BG-200, #d1d1d1);
+  font-family: Quicksand;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px; /* 122.222% */
+  letter-spacing: -0.72px;
 }
-.p-parts-of-evec{
+.p-parts-of-evec {
   padding-left: 200px;
 }
 .p-footer {
@@ -3248,7 +3249,8 @@ letter-spacing: -0.72px;
     line-height: 20px;
     text-align: left;
   }
-  .p-mobile-title-text-btn h3 {
+  .p-mobile-title-text-btn a {
+    text-decoration: none;
     cursor: pointer;
     color: #ffbf00;
     font-family: Quicksand;

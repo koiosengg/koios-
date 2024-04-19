@@ -103,114 +103,117 @@ var observer = new IntersectionObserver(handleIntersect, options);
 // Start observing the target div
 observer.observe(circleDiv);
 
-
-
 //Image carousel
 
-window.addEventListener('DOMContentLoaded', function () {
-  const carouselSets = document.querySelectorAll('.s-carousel-set');
-  const carouselText = document.querySelector('.s-carousel-text-container');
-  const textElements = carouselText.querySelectorAll('p');
-  const positions = ['s-position2', 's-position1', 's-position0', 's-position-1', 's-position-2'];
+window.addEventListener("DOMContentLoaded", function () {
+  const carouselSets = document.querySelectorAll(".s-carousel-set");
+  const carouselText = document.querySelector(".s-carousel-text-container");
+  const textElements = carouselText.querySelectorAll("p");
+  const positions = [
+    "s-position2",
+    "s-position1",
+    "s-position0",
+    "s-position-1",
+    "s-position-2",
+  ];
   let currentIndex = 0;
 
   if (carouselSets.length > 5) {
-      const diff = carouselSets.length - 5;
-      for (let i = 1; i <= diff; i++) {
-          positions.push('s-not-active');
-      }
+    const diff = carouselSets.length - 5;
+    for (let i = 1; i <= diff; i++) {
+      positions.push("s-not-active");
+    }
   }
 
   function shiftPositionClasses() {
-      const newPositionIndex = currentIndex % positions.length;
+    const newPositionIndex = currentIndex % positions.length;
 
-      carouselSets.forEach(function (set, index) {
-          const newPosition = (newPositionIndex + index) % positions.length;
-          set.className = 's-carousel-set ' + positions[newPosition];
-      });
+    carouselSets.forEach(function (set, index) {
+      const newPosition = (newPositionIndex + index) % positions.length;
+      set.className = "s-carousel-set " + positions[newPosition];
+    });
 
-      // Hide all text elements
-      textElements.forEach(function (text) {
-          text.style.display = 'none';
-      });
+    // Hide all text elements
+    textElements.forEach(function (text) {
+      text.style.display = "none";
+    });
 
-      // Show the corresponding text element
-      textElements[newPositionIndex].style.display = 'block';
+    // Show the corresponding text element
+    textElements[newPositionIndex].style.display = "block";
 
-      currentIndex++;
+    currentIndex++;
 
-      setTimeout(shiftPositionClasses, 4000); // 4 seconds delay
+    setTimeout(shiftPositionClasses, 4000); // 4 seconds delay
   }
 
   shiftPositionClasses();
 });
 
-
-document.addEventListener('DOMContentLoaded', function () {
-  const sliders = document.querySelectorAll('.s-product-img-carousel');
+document.addEventListener("DOMContentLoaded", function () {
+  const sliders = document.querySelectorAll(".s-product-img-carousel");
 
   sliders.forEach(function (slider) {
-      const nextBtn = slider.querySelector('.s-next-img');
-      const prevBtn = slider.querySelector('.s-previous-img');
-      const sliderContent = slider.querySelector('.s-slider');
-      const indicator = slider.querySelector('.s-carousel-indicator');
-      const slides = slider.querySelectorAll('.s-slider img');
-      const totalSlides = slides.length;
-      const sliderWidth = sliderContent.getBoundingClientRect().width;
-      let counter = 0;
+    const nextBtn = slider.querySelector(".s-next-img");
+    const prevBtn = slider.querySelector(".s-previous-img");
+    const sliderContent = slider.querySelector(".s-slider");
+    const indicator = slider.querySelector(".s-carousel-indicator");
+    const slides = slider.querySelectorAll(".s-slider img");
+    const totalSlides = slides.length;
+    const sliderWidth = sliderContent.getBoundingClientRect().width;
+    let counter = 0;
 
-      function updateIndicatorColor() {
-          const scrollProgress = ((counter + 1) / totalSlides) * 100;
-          indicator.innerHTML = '';
-          for (let i = 0; i < totalSlides; i++) {
-              const indicatorDiv = document.createElement('div');
-              indicatorDiv.classList.add('s-carousel-indicator-container');
-              indicator.appendChild(indicatorDiv);
-          }
-          const indicatorDivs = indicator.querySelectorAll('.s-carousel-indicator-container');
-          indicatorDivs.forEach((div, index) => {
-              if (index === counter) {
-                  div.style.background = '#01cfdc';
-              } else {
-                  div.style.background = '#c8c8c8';
-              }
-          });
+    function updateIndicatorColor() {
+      const scrollProgress = ((counter + 1) / totalSlides) * 100;
+      indicator.innerHTML = "";
+      for (let i = 0; i < totalSlides; i++) {
+        const indicatorDiv = document.createElement("div");
+        indicatorDiv.classList.add("s-carousel-indicator-container");
+        indicator.appendChild(indicatorDiv);
+      }
+      const indicatorDivs = indicator.querySelectorAll(
+        ".s-carousel-indicator-container"
+      );
+      indicatorDivs.forEach((div, index) => {
+        if (index === counter) {
+          div.style.background = "#01cfdc";
+        } else {
+          div.style.background = "#c8c8c8";
+        }
+      });
+    }
+
+    function updateSlider() {
+      sliderContent.style.transform = `translateX(-${counter * sliderWidth}px)`;
+
+      if (counter === 0) {
+        prevBtn.classList.add("disabled");
+      } else {
+        prevBtn.classList.remove("disabled");
       }
 
-
-
-      function updateSlider() {
-          sliderContent.style.transform = `translateX(-${counter * sliderWidth}px)`;
-
-          if (counter === 0) {
-              prevBtn.classList.add('disabled');
-          } else {
-              prevBtn.classList.remove('disabled');
-          }
-
-          if (counter === totalSlides - 1) {
-              nextBtn.classList.add('disabled');
-          } else {
-              nextBtn.classList.remove('disabled');
-          }
-
-          updateIndicatorColor();
+      if (counter === totalSlides - 1) {
+        nextBtn.classList.add("disabled");
+      } else {
+        nextBtn.classList.remove("disabled");
       }
-
-      nextBtn.addEventListener('click', function () {
-          if (counter < totalSlides - 1) {
-              counter++;
-              updateSlider();
-          }
-      });
-
-      prevBtn.addEventListener('click', function () {
-          if (counter > 0) {
-              counter--;
-              updateSlider();
-          }
-      });
 
       updateIndicatorColor();
+    }
+
+    nextBtn.addEventListener("click", function () {
+      if (counter < totalSlides - 1) {
+        counter++;
+        updateSlider();
+      }
+    });
+
+    prevBtn.addEventListener("click", function () {
+      if (counter > 0) {
+        counter--;
+        updateSlider();
+      }
+    });
+
+    updateIndicatorColor();
   });
 });

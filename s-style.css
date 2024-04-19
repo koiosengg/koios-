@@ -1975,6 +1975,14 @@
     padding: 20px;
     gap: 20px;
   }
+  .s-vision-mission-container p{
+    color: var(--gray---for-text-25, #FCFCFD);
+font-family: Quicksand;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 150% */
+  }
 
   .s-vision-mission-container-text {
     gap: 8px;
@@ -1983,6 +1991,12 @@
   .s-vision-mission-container-text li {
     width: 100%;
     height: auto;
+    color: var(--gray---for-text-400, #98A2B3);
+font-family: Quicksand;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 157.143% */
   }
 
   .s-product-list {
@@ -2003,7 +2017,22 @@
     height: auto;
     padding: 0;
   }
-
+  .subpage-desc{
+    color: var(--gray---for-text-400, #98A2B3) !important;
+    font-family: Quicksand !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 19px !important; /* 135.714% */
+  }
+  .s-product-list-set-heading h2{
+    color: var(--gray---for-text-400, #98A2B3);
+font-family: Quicksand;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px; /* 135.714% */
+  }
   .s-engineering-solutions .s-product-list-set-heading {
     border-right: 0;
   }

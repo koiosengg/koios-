@@ -410,6 +410,14 @@ body {
 .p-slide.five img {
   height: 80px;
 }
+.p-slide.eight svg{
+  width: 210px;
+  height: 50px
+}
+.p-slide.nine svg{
+  width: 90px;
+  height: 85px;
+}
 
 .p-logo-slider .p-slide p {
   background: linear-gradient(99deg, #0d9bbf 12.43%, #fff 81.72%);
@@ -3195,13 +3203,13 @@ span {
     gap: 16px;
   }
   .p-line-p p {
-    width: 160px;
-    color: var(--gray---for-text-25, #fcfcfd);
-    font-family: Quicksand;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px; /* 171.429% */
+  
+    color: var(--gray---for-text-25, #fcfcfd) !important;
+    font-family: Quicksand !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: 24px !important; /* 171.429% */
   }
   .p-shopnow-btn {
     background: var(--Amber-500----Primary, #1a1a1a);

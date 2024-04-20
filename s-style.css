@@ -1199,6 +1199,9 @@
   font-weight: 500;
   line-height: 28px;
 }
+.s-aboutus-text span::first-letter {
+  text-transform: capitalize;
+}
 
 .s-aboutus-validators {
   display: flex;
@@ -2272,6 +2275,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+  .s-aboutus-text span::first-letter {
+    text-transform: capitalize;
   }
 
   .s-aboutus-validators {

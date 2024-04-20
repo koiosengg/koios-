@@ -2768,8 +2768,14 @@ span {
   .p-contact-button p {
     color: var(--Woodsmoke----BG-950----bg, #1a1a1a);
     text-align: center;
-
-    /* S - Text/Semibold */
+    font-family: Quicksand;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 171.429% */
+  }
+  .p-mail-button p{
+    text-align: center;
     font-family: Quicksand;
     font-size: 14px;
     font-style: normal;

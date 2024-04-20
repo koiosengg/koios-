@@ -1431,7 +1431,7 @@
 }
 
 .s-below-vision-container {
-  width: 720px;
+  width: 820px;
   height: 258px;
   display: flex;
   flex-direction: column;
@@ -1440,7 +1440,9 @@
   flex-shrink: 0;
   z-index: 10;
 }
-
+.s-below-vision-container p::first-letter {
+  text-transform: capitalize;
+}
 .s-below-vision-container p {
   color: #fff;
   text-align: center;

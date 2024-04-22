@@ -266,28 +266,25 @@
 
 @keyframes glow0 {
   0% {
-    border-image: linear-gradient(
-      to right,
-      transparent 0%,
-      transparent 50%,
-      #0d9bbf 50%,
-      #0d9bbf 50%,
-      transparent 50%,
-      transparent 100%
-    );
+    border-image: linear-gradient(to right,
+        transparent 0%,
+        transparent 50%,
+        #0d9bbf 50%,
+        #0d9bbf 50%,
+        transparent 50%,
+        transparent 100%);
     border-image-slice: 1;
     box-shadow: 0px -1px 40px 0px rgba(13, 155, 191, 0);
   }
+
   100% {
-    border-image: linear-gradient(
-      to right,
-      transparent 0%,
-      transparent 10%,
-      #0d9bbf 30%,
-      #0d9bbf 70%,
-      transparent 90%,
-      transparent 100%
-    );
+    border-image: linear-gradient(to right,
+        transparent 0%,
+        transparent 10%,
+        #0d9bbf 30%,
+        #0d9bbf 70%,
+        transparent 90%,
+        transparent 100%);
     border-image-slice: 1;
     box-shadow: 0px -1px 40px 0px rgba(13, 155, 191, 0.6);
   }
@@ -307,28 +304,25 @@
 
 @keyframes glow1 {
   0% {
-    border-image: linear-gradient(
-      to right,
-      transparent 0%,
-      transparent 50%,
-      #ffbf00 50%,
-      #ffbf00 50%,
-      transparent 50%,
-      transparent 100%
-    );
+    border-image: linear-gradient(to right,
+        transparent 0%,
+        transparent 50%,
+        #ffbf00 50%,
+        #ffbf00 50%,
+        transparent 50%,
+        transparent 100%);
     border-image-slice: 1;
     box-shadow: 0px -1px 40px 0px rgba(255, 191, 0, 0);
   }
+
   100% {
-    border-image: linear-gradient(
-      to right,
-      transparent 0%,
-      transparent 10%,
-      #ffbf00 30%,
-      #ffbf00 70%,
-      transparent 90%,
-      transparent 100%
-    );
+    border-image: linear-gradient(to right,
+        transparent 0%,
+        transparent 10%,
+        #ffbf00 30%,
+        #ffbf00 70%,
+        transparent 90%,
+        transparent 100%);
     border-image-slice: 1;
     box-shadow: 0px -1px 40px 0px rgba(255, 191, 0, 0.6);
   }
@@ -348,28 +342,25 @@
 
 @keyframes glow2 {
   0% {
-    border-image: linear-gradient(
-      to right,
-      transparent 0%,
-      transparent 50%,
-      #ffffff 50%,
-      #ffffff 50%,
-      transparent 50%,
-      transparent 100%
-    );
+    border-image: linear-gradient(to right,
+        transparent 0%,
+        transparent 50%,
+        #ffffff 50%,
+        #ffffff 50%,
+        transparent 50%,
+        transparent 100%);
     border-image-slice: 1;
     box-shadow: 0px -1px 40px 0px rgba(255, 191, 0, 0);
   }
+
   100% {
-    border-image: linear-gradient(
-      to right,
-      transparent 0%,
-      transparent 10%,
-      #ffffff 30%,
-      #ffffff 70%,
-      transparent 90%,
-      transparent 100%
-    );
+    border-image: linear-gradient(to right,
+        transparent 0%,
+        transparent 10%,
+        #ffffff 30%,
+        #ffffff 70%,
+        transparent 90%,
+        transparent 100%);
     border-image-slice: 1;
     box-shadow: -1px 4px 60px 0px rgba(255, 255, 255, 0.4);
   }
@@ -437,11 +428,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  background: linear-gradient(
-    90deg,
-    #fff 3.85%,
-    rgba(255, 255, 255, 0.6) 143.9%
-  );
+  background: linear-gradient(90deg,
+      #fff 3.85%,
+      rgba(255, 255, 255, 0.6) 143.9%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -572,14 +561,17 @@
   font-weight: 700;
   line-height: normal;
 }
+
 .s-product-list-set-heading h2 {
   color: #fff;
   font-family: Quicksand;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px; /* 155.556% */
+  line-height: 28px;
+  /* 155.556% */
 }
+
 .subpage-desc {
   color: var(--gray---for-text-400, #98a2b3) !important;
   font-family: Quicksand !important;
@@ -588,12 +580,14 @@
   font-weight: 500 !important;
   line-height: 28px !important;
 }
+
 .s-product-list-set-heading .heading {
   font-family: Quicksand;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
   letter-spacing: 0.32px;
   background: linear-gradient(90deg, #0d9bbf 19.69%, #fff 105.83%);
   background-clip: text;
@@ -859,11 +853,9 @@
   flex-shrink: 0;
   border-radius: 12px;
   filter: blur(2.5px);
-  background: linear-gradient(
-    0deg,
-    rgba(23, 23, 23, 0.85) 0%,
-    rgba(23, 23, 23, 0.85) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(23, 23, 23, 0.85) 0%,
+      rgba(23, 23, 23, 0.85) 100%);
 }
 
 .s-position-2 .s-carousel-set-bg,
@@ -926,16 +918,19 @@
     scale: 1.2;
     opacity: 0;
   }
+
   10% {
     transform: translateX(20%);
     scale: 1;
     opacity: 1;
   }
+
   80% {
     transform: translateX(20%);
     scale: 1;
     opacity: 1;
   }
+
   100% {
     transform: translateX(-10%);
     scale: 1;
@@ -951,6 +946,7 @@
   z-index: 2;
   animation: slideFromLeftToCenter 4.5s ease forwards;
 }
+
 @keyframes slideFromLeftToCenter {
   0% {
     transform: translateX(80%);
@@ -969,6 +965,7 @@
     scale: 1;
     opacity: 1;
   }
+
   100% {
     transform: translateX(40%);
     scale: 0.8;
@@ -991,15 +988,18 @@
     scale: 0.8;
     opacity: 0;
   }
+
   20% {
     transform: translateX(-50%) scale(1);
     scale: 1;
     opacity: 1;
   }
+
   90% {
     transform: translateX(-50%) scale(1);
     opacity: 1;
   }
+
   100% {
     transform: translateX(-70%) scale(0.85);
     opacity: 0;
@@ -1014,20 +1014,24 @@
   z-index: 2;
   animation: slideFromRightToLeft2 4.5s ease forwards;
 }
+
 @keyframes slideFromRightToLeft2 {
   0% {
     transform: translateX(-40%);
     scale: 0.9;
   }
+
   20% {
     transform: translateX(-60%);
     scale: 1;
   }
+
   80% {
     transform: translateX(-60%);
     scale: 1;
     opacity: 1;
   }
+
   100% {
     transform: translateX(-80%);
     scale: 1.1;
@@ -1043,6 +1047,7 @@
   z-index: 1;
   animation: slideFromRightToLeft 4.5s ease forwards;
 }
+
 @keyframes slideFromRightToLeft {
   0% {
     transform: translateX(0);
@@ -1061,6 +1066,7 @@
     scale: 1;
     opacity: 1;
   }
+
   100% {
     transform: translateX(-60%);
     scale: 1.3;
@@ -1082,7 +1088,8 @@
 
 .s-carousel-text-container {
   position: relative;
-  overflow: hidden; /* Ensure text overflow is hidden */
+  overflow: hidden;
+  /* Ensure text overflow is hidden */
 }
 
 .s-carousel-text p {
@@ -1102,14 +1109,17 @@
     opacity: 0;
     transform: translateY(100%);
   }
+
   10% {
     opacity: 1;
     transform: translateY(0);
   }
+
   88% {
     opacity: 1;
     transform: translateY(0);
   }
+
   100% {
     opacity: 0;
     transform: translateY(-100%);
@@ -1136,9 +1146,11 @@
   z-index: 0;
   top: 70px;
 }
+
 .s-logo {
   cursor: pointer;
 }
+
 .s-aboutus-logo {
   z-index: 10;
   width: 227px;
@@ -1148,11 +1160,9 @@
   justify-content: center;
   flex-shrink: 0;
   border-radius: 10px;
-  background: radial-gradient(
-    161.14% 147.01% at 1.51% 100%,
-    #1a1a1a 0%,
-    #101010 95.85%
-  );
+  background: radial-gradient(161.14% 147.01% at 1.51% 100%,
+      #1a1a1a 0%,
+      #101010 95.85%);
   box-shadow: 0px 2px 100px 2px rgba(255, 191, 0, 0.1);
 }
 
@@ -1180,11 +1190,9 @@
   font-weight: 400;
   line-height: 72px;
   letter-spacing: -1.2px;
-  background: radial-gradient(
-    4636.51% 174.87% at 5.28% 5.83%,
-    #fff 0%,
-    rgba(255, 255, 255, 0.49) 100%
-  );
+  background: radial-gradient(4636.51% 174.87% at 5.28% 5.83%,
+      #fff 0%,
+      rgba(255, 255, 255, 0.49) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1199,6 +1207,7 @@
   font-weight: 500;
   line-height: 28px;
 }
+
 .s-aboutus-text span::first-letter {
   text-transform: capitalize;
 }
@@ -1223,29 +1232,21 @@
   gap: 16px;
   border-radius: 10px;
   border-top: 2px solid #fff;
-  border-image: linear-gradient(
-    to right,
-    #000 0%,
-    #fff 30%,
-    #fff 70%,
-    #000 100%
-  );
+  border-image: linear-gradient(to right,
+      #000 0%,
+      #fff 30%,
+      #fff 70%,
+      #000 100%);
   border-image-slice: 1;
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(0, 0, 0, 0.07) 38.25%,
-      rgba(0, 0, 0, 0.13) 100%
-    ),
-    radial-gradient(
-      50% 40% at 50% 0%,
+      rgba(0, 0, 0, 0.13) 100%),
+    radial-gradient(50% 40% at 50% 0%,
       rgba(255, 191, 0, 0.3) -50%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    linear-gradient(
-      1deg,
+      rgba(0, 0, 0, 0) 100%),
+    linear-gradient(1deg,
       rgba(46, 46, 46, 0) -27.96%,
-      rgba(46, 46, 46, 0.6) 99.48%
-    );
+      rgba(46, 46, 46, 0.6) 99.48%);
 }
 
 .s-validators-set p {
@@ -1301,11 +1302,9 @@
   overflow: hidden;
   border-radius: 8px;
   border: 1px solid rgba(202, 255, 51, 0.1);
-  background: linear-gradient(
-      106deg,
+  background: linear-gradient(106deg,
       rgba(255, 191, 0, 0.05) -29.45%,
-      rgba(255, 191, 0, 0) 27.86%
-    ),
+      rgba(255, 191, 0, 0) 27.86%),
     linear-gradient(267deg, #1c1c1c 40.67%, rgba(28, 28, 28, 0) 99.81%),
     url(./s-public/aboutus-koios-bg.png);
   background-blend-mode: normal, normal, screen;
@@ -1423,11 +1422,9 @@
   padding: 80px 360px;
   justify-content: center;
   align-items: center;
-  background: conic-gradient(
-      from 180deg at 50% 50%,
+  background: conic-gradient(from 180deg at 50% 50%,
       #1a1a1a 90.60135126113892deg,
-      #1a1a1a 270.0000214576721deg
-    ),
+      #1a1a1a 270.0000214576721deg),
     #1a1a1a;
   position: relative;
   overflow: hidden;
@@ -1443,9 +1440,11 @@
   flex-shrink: 0;
   z-index: 10;
 }
+
 .s-below-vision-container p::first-letter {
   text-transform: capitalize;
 }
+
 .s-below-vision-container p {
   color: #fff;
   text-align: center;
@@ -1504,11 +1503,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  background: linear-gradient(
-    180deg,
-    #fff -8.03%,
-    rgba(255, 255, 255, 0.28) 90.51%
-  );
+  background: linear-gradient(180deg,
+      #fff -8.03%,
+      rgba(255, 255, 255, 0.28) 90.51%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1700,44 +1697,36 @@
     gap: 26px;
     align-self: stretch;
     border-radius: 12px;
-    background: linear-gradient(
-      228deg,
-      #1c1c1c 0.94%,
-      rgba(28, 28, 28, 0) 104.91%
-    );
+    background: linear-gradient(228deg,
+        #1c1c1c 0.94%,
+        rgba(28, 28, 28, 0) 104.91%);
     box-shadow: 0px 0px 15px 0px rgba(13, 155, 191, 0.1);
     border: 2px solid #fff;
-    border-image: linear-gradient(
-      to bottom,
-      #0d9bbf 0%,
-      #0d9bbf 70%,
-      transparent 90%,
-      transparent 100%
-    );
+    border-image: linear-gradient(to bottom,
+        #0d9bbf 0%,
+        #0d9bbf 70%,
+        transparent 90%,
+        transparent 100%);
     border-image-slice: 1;
   }
 
   .Software .s-mobile-nav-list {
     border: 2px solid #fff;
-    border-image: linear-gradient(
-      to bottom,
-      #ffbf00 0%,
-      #ffbf00 70%,
-      transparent 90%,
-      transparent 100%
-    );
+    border-image: linear-gradient(to bottom,
+        #ffbf00 0%,
+        #ffbf00 70%,
+        transparent 90%,
+        transparent 100%);
     border-image-slice: 1;
   }
 
   .Edutech .s-mobile-nav-list {
     border: 2px solid #fff;
-    border-image: linear-gradient(
-      to bottom,
-      #fff 0%,
-      #fff 70%,
-      transparent 90%,
-      transparent 100%
-    );
+    border-image: linear-gradient(to bottom,
+        #fff 0%,
+        #fff 70%,
+        transparent 90%,
+        transparent 100%);
     border-image-slice: 1;
   }
 
@@ -1838,6 +1827,7 @@
   .s-product-banner {
     padding: 120px 20px 24px 20px;
   }
+
   .s-product-banner-container {
     gap: 48px;
   }
@@ -1905,11 +1895,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    background: linear-gradient(
-      90deg,
-      #fff 3.85%,
-      rgba(255, 255, 255, 0.6) 143.9%
-    );
+    background: linear-gradient(90deg,
+        #fff 3.85%,
+        rgba(255, 255, 255, 0.6) 143.9%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1993,6 +1981,7 @@
   .s-product-list {
     padding: 24px 20px;
   }
+
   .s-product-list-set {
     width: 100%;
     padding: 0;
@@ -2021,22 +2010,14 @@
     border-right: 0;
   }
 
-  .s-engineering-solutions
-    .s-product-list-set:nth-child(1)
-    .s-product-list-set-heading,
-  .s-hidden-products
-    .s-product-list-set:nth-child(1)
-    .s-product-list-set-heading,
-  .s-hidden-products
-    .s-product-list-set:nth-child(4)
-    .s-product-list-set-heading {
+  .s-engineering-solutions .s-product-list-set:nth-child(1) .s-product-list-set-heading,
+  .s-hidden-products .s-product-list-set:nth-child(1) .s-product-list-set-heading,
+  .s-hidden-products .s-product-list-set:nth-child(4) .s-product-list-set-heading {
     border-top: 1px solid #01cfdc;
     padding-top: 44px;
   }
 
-  .s-software-solutions
-    .s-product-list-set:first-child
-    .s-product-list-set-heading {
+  .s-software-solutions .s-product-list-set:first-child .s-product-list-set-heading {
     border-top: 1px solid #ffd24d;
     padding-top: 44px;
   }
@@ -2090,6 +2071,7 @@
     height: 100%;
     align-self: stretch;
   }
+
   .s-slider img {
     width: 100%;
   }
@@ -2129,11 +2111,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    background: linear-gradient(
-      90deg,
-      #fff 3.85%,
-      rgba(255, 255, 255, 0.6) 143.9%
-    );
+    background: linear-gradient(90deg,
+        #fff 3.85%,
+        rgba(255, 255, 255, 0.6) 143.9%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2228,11 +2208,9 @@
     align-items: flex-start;
     gap: 8px;
     border-radius: 8px;
-    background: radial-gradient(
-      161.14% 147.01% at 1.51% 100%,
-      #1a1a1a 0%,
-      #101010 95.85%
-    );
+    background: radial-gradient(161.14% 147.01% at 1.51% 100%,
+        #1a1a1a 0%,
+        #101010 95.85%);
     box-shadow: 0px 1.6px 80px 1.6px rgba(255, 191, 0, 0.1);
   }
 
@@ -2257,11 +2235,9 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.72px;
-    background: linear-gradient(
-      90deg,
-      #fff 3.85%,
-      rgba(255, 255, 255, 0.6) 143.9%
-    );
+    background: linear-gradient(90deg,
+        #fff 3.85%,
+        rgba(255, 255, 255, 0.6) 143.9%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2276,6 +2252,7 @@
     font-weight: 400;
     line-height: normal;
   }
+
   .s-aboutus-text span::first-letter {
     text-transform: capitalize;
   }
@@ -2336,11 +2313,9 @@
     align-self: stretch;
     border-radius: 8px;
     border: 1px solid rgba(202, 255, 51, 0.1);
-    background: linear-gradient(
-        106deg,
+    background: linear-gradient(106deg,
         rgba(255, 191, 0, 0.05) -29.45%,
-        rgba(255, 191, 0, 0) 27.86%
-      ),
+        rgba(255, 191, 0, 0) 27.86%),
       linear-gradient(267deg, #1c1c1c 40.67%, rgba(28, 28, 28, 0) 99.81%),
       url("./s-public/aboutus-koios-bg.png");
     background-blend-mode: normal, normal, screen;

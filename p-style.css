@@ -2427,8 +2427,8 @@ span {
   }
 
   .p-talk-to-us {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .p-form-logo {
@@ -2738,8 +2738,8 @@ span {
   }
 
   .p-talk-to-us {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
     color: var(--gray---for-text-400, #98a2b3);
     text-align: center;
     font-family: Quicksand;
@@ -3951,7 +3951,9 @@ span {
     font-weight: 500;
     line-height: 24px;
   }
-
+  .p-career {
+    padding-top: 270px;
+  }
   .p-links-content {
     display: none;
   }

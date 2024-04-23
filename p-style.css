@@ -726,9 +726,11 @@ body {
   letter-spacing: -0.72px;
 }
 
-.p-parts.mobile {
+.p-parts.mobile,
+.p-component {
   display: none;
 }
+
 
 .p-apply-now {
   padding-top: 80px;
@@ -2675,6 +2677,27 @@ span {
     display: none;
   }
 
+  .p-component {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .p-component h1 {
+    color: var(--Woodsmoke----BG-200, #D1D1D1);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .p-component-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
   .p-parts.mobile {
     display: block;
     width: 100%;
@@ -3915,7 +3938,7 @@ span {
 
   .p-about-koios-container p,
   li {
-    color: var(--Woodsmoke----BG-300, #b0b0b0);
+    color: var(--Woodsmoke----BG-400, #b0b0b0);
     font-family: Quicksand;
     font-size: 12px;
     font-style: normal;

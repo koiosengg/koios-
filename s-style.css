@@ -697,14 +697,14 @@
 
 .s-product-list-set-container p {
   width: 608px;
-  /* height: 112px; */
   flex-shrink: 0;
-  color: var(--Absolute-White, #fff);
   font-family: Quicksand;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
+  color: var(--gray---for-text-400, #98A2B3);
+  font-family: Quicksand;
 }
 
 .s-product-list-set-container a {

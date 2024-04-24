@@ -452,7 +452,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 128.571%;
-  /* 18px */
   letter-spacing: -0.28px;
 }
 
@@ -532,9 +531,7 @@ body {
 @keyframes logo-scroll-reverse {
   0% {
     -webkit-transform: translateX(calc(-100% - 375px));
-    /* Adjusted initial position */
     transform: translateX(calc(-100% - 375px));
-    /* Adjusted initial position */
   }
 
   100% {
@@ -808,7 +805,6 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
-  /* 140% */
 }
 
 .p-globe-clock-text svg {
@@ -950,7 +946,6 @@ li {
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
-  /* 140% */
 }
 
 .p-form-details-div {
@@ -975,7 +970,6 @@ li {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  /* 171.429% */
 }
 
 .p-career-fullname input {
@@ -1030,7 +1024,6 @@ li {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  /* 171.429% */
 }
 
 .p-career-email p {
@@ -1040,7 +1033,6 @@ li {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  /* 171.429% */
 }
 
 .p-resume-container p {
@@ -1050,7 +1042,6 @@ li {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  /* 171.429% */
   width: fit-content;
 }
 
@@ -1239,7 +1230,6 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  /* 120px */
   letter-spacing: -6px;
   text-transform: capitalize;
   background: linear-gradient(92deg,
@@ -1267,7 +1257,6 @@ li {
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
-  /* 125% */
 }
 
 .p-implementing-text {
@@ -1279,15 +1268,12 @@ li {
   font-weight: 400;
   line-height: 120%;
   letter-spacing: -6px;
-
   text-transform: capitalize;
-
   background: linear-gradient(92deg,
       #ffbf00 17.84%,
       #0d9bbf 48.87%,
       #fff 87.19%,
       #ffbf00);
-
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1384,7 +1370,6 @@ li {
   font-style: normal;
   font-weight: 700;
   line-height: 128.571%;
-  /* 18px */
   letter-spacing: -0.28px;
 }
 
@@ -1420,7 +1405,6 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: 72px;
-  /* 150% */
   letter-spacing: -0.96px;
 }
 
@@ -1432,7 +1416,6 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  /* 160% */
   align-items: center;
 }
 
@@ -1475,7 +1458,6 @@ li {
   border: 1px solid rgba(202, 255, 51, 0.1);
   background: linear-gradient(106deg,
       rgba(255, 191, 0, 0.02) -29.45%,
-      /* reduced the alpha value from 0.05 to 0.02 */
       rgba(255, 191, 0, 0) 27.86%),
     linear-gradient(267deg, #1c1c1c 40.67%, rgba(28, 28, 28, 0.5) 99.81%),
     url(./assets/aboutus-koios-bg.png);
@@ -1560,7 +1542,6 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: 72px;
-  /* 150% */
   letter-spacing: -0.96px;
 }
 
@@ -1632,7 +1613,6 @@ li {
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
-  /* 140% */
 }
 
 .p-engineering-text,
@@ -1646,7 +1626,6 @@ li {
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
-  /* 133.333% */
   gap: 24px;
 }
 
@@ -1657,7 +1636,6 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  /* 160% */
 }
 
 .p-engineering-container {
@@ -1762,7 +1740,6 @@ li {
   font-style: normal;
   font-weight: 600;
   line-height: 60px;
-  /* 125% */
   letter-spacing: -0.96px;
   background: linear-gradient(93deg,
       #fff 8.57%,
@@ -1859,7 +1836,6 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  /* 157.143% */
 }
 
 .p-breadcrumb-text {
@@ -1908,7 +1884,6 @@ span {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  /* 150% */
   letter-spacing: 0.32px;
 }
 
@@ -1923,7 +1898,6 @@ span {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  /* 150% */
   letter-spacing: 0.32px;
   background: linear-gradient(90deg,
       #fff 19.69%,
@@ -1940,7 +1914,6 @@ span {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  /* 150% */
   letter-spacing: 0.32px;
   background: linear-gradient(90deg, #ffbf00 19.69%, #fff 105.83%);
   background-clip: text;
@@ -1956,7 +1929,6 @@ span {
   font-style: normal;
   font-weight: 400;
   line-height: 72px;
-  /* 120% */
   letter-spacing: -1.2px;
 }
 
@@ -1974,7 +1946,6 @@ span {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  /* 160% */
 }
 
 .p-md-heading {
@@ -2029,7 +2000,6 @@ span {
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
-  /* 155.556% */
 }
 
 .p-md-title {
@@ -2126,7 +2096,6 @@ span {
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
-  /* 155.556% */
 }
 
 .p-rectangle-shape {
@@ -2170,7 +2139,6 @@ span {
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
-  /* 133.333% */
 }
 
 .p-service-offering {
@@ -2186,7 +2154,6 @@ span {
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
-  /* 155.556% */
 }
 
 .p-btm-line {
@@ -2247,7 +2214,6 @@ span {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  /* 160% */
 }
 
 .p-load-more-div {
@@ -2489,6 +2455,8 @@ span {
   }
 
   .p-our-services-container {
+    padding-left: 20px; 
+    padding-right: 20px;
     padding-top: 0;
     width: 600px;
     padding-bottom: 48px;
@@ -2707,7 +2675,7 @@ span {
     color: var(--Woodsmoke----BG-300, #B0B0B0) !important;
     text-align: center !important;
     font-family: Quicksand !important;
-    font-size: 14px !important;
+    font-size: 20px !important;
     font-style: normal !important;
     font-weight: 700 !important;
     line-height: 24px !important;
@@ -3724,6 +3692,20 @@ span {
 
   .p-implementing-container {
     gap: 34px;
+  }
+
+  .p-parts p {
+    color: var(--Woodsmoke----BG-300, #B0B0B0) !important;
+    text-align: center !important;
+    font-family: Quicksand !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 24px !important;
+    /* 171.429% */
+    letter-spacing: 0.28px !important;
+    justify-content: center !important;
+    width: 100% !important;
   }
 
   /* Responsive footer */

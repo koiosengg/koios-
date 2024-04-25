@@ -441,6 +441,16 @@ body {
   width: 100px;
 }
 
+.p-slide.ten svg {
+  height: 120px;
+  width: 124px;
+}
+
+.p-slide.eleven svg {
+  height: 140px;
+  width: 140px;
+}
+
 .p-logo-slider .p-slide p {
   background: linear-gradient(99deg, #0d9bbf 12.43%, #fff 81.72%);
   background-clip: text;
@@ -2455,7 +2465,7 @@ span {
   }
 
   .p-our-services-container {
-    padding-left: 20px; 
+    padding-left: 20px;
     padding-right: 20px;
     padding-top: 0;
     width: 600px;

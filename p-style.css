@@ -2259,6 +2259,15 @@ span {
   display: none;
 }
 
+.p-hover.engg:hover{
+ color: #0d9bbf;
+}
+.p-hover.software:hover{
+  color: #ffbf00;
+}
+.p-hover.edutech:hover{
+  color: #ffffff;
+}
 
 
 .p-footer {
@@ -2373,7 +2382,9 @@ span {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
+  cursor: pointer;
 }
+
 
 @media only screen and (max-width: 1300px) {
   .p-text-main {
@@ -3800,7 +3811,7 @@ span {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-    /* 233.333% */
+    cursor: pointer;
   }
 
   .p-back-career-button {

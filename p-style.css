@@ -2259,13 +2259,15 @@ span {
   display: none;
 }
 
-.p-hover.engg:hover{
- color: #0d9bbf;
+.p-hover.engg:hover {
+  color: #0d9bbf;
 }
-.p-hover.software:hover{
+
+.p-hover.software:hover {
   color: #ffbf00;
 }
-.p-hover.edutech:hover{
+
+.p-hover.edutech:hover {
   color: #ffffff;
 }
 

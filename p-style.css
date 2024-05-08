@@ -2347,7 +2347,33 @@ span {
   padding-top: 120px;
   padding-bottom: 40px;
 }
-
+.p-address-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.p-call-div,
+.p-location-div,
+.p-mail-div {
+  width: 204px;
+  height: 72px;
+  gap: 24px;
+}
+.p-address-container p {
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #98a2b3;
+}
+.p-gd {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .p-refer-button:hover {
   box-shadow: 0px 4px 20px 0px rgba(255, 191, 0, 0.15);
 }
@@ -2433,6 +2459,7 @@ span {
   cursor: pointer;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .p-social-icons.mobile,
@@ -2539,7 +2566,7 @@ span {
   .p-details-text {
     width: fit-content;
   }
-  .service-container{
+  .service-container {
     margin-top: 0;
   }
   .p-our-services-container {

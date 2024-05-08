@@ -28,9 +28,11 @@ body {
 }
 
 .p-get-in-touch {
-  background: linear-gradient(90deg,
-      #fff 3.85%,
-      rgba(255, 255, 255, 0.6) 143.9%);
+  background: linear-gradient(
+    90deg,
+    #fff 3.85%,
+    rgba(255, 255, 255, 0.6) 143.9%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -73,9 +75,11 @@ body {
 }
 
 .p-join-us {
-  background: linear-gradient(90deg,
-      #fff 3.85%,
-      rgba(255, 255, 255, 0.6) 143.9%);
+  background: linear-gradient(
+    90deg,
+    #fff 3.85%,
+    rgba(255, 255, 255, 0.6) 143.9%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -95,9 +99,11 @@ body {
 .p-join-us.Creators {
   width: 556px;
   height: 122px;
-  background: linear-gradient(92deg,
-      #fff 13.76%,
-      rgba(255, 255, 255, 0.6) 134.57%);
+  background: linear-gradient(
+    92deg,
+    #fff 13.76%,
+    rgba(255, 255, 255, 0.6) 134.57%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -143,6 +149,7 @@ body {
 }
 
 .p-gear-vector svg {
+  display: none;
   position: absolute;
   overflow: hidden;
   width: calc(94% + 100px);
@@ -158,12 +165,14 @@ body {
   border-width: 1px;
   border-style: solid;
   border-image: linear-gradient(to bottom, yellow, white, cyan) 1;
-  border-image-source: linear-gradient(180deg,
-      #ffbf00 0%,
-      #ffffff 25.08%,
-      #0d9bbf 51.45%,
-      #1a1a1a 84.24%,
-      #1a1a1a 100%);
+  border-image-source: linear-gradient(
+    180deg,
+    #ffbf00 0%,
+    #ffffff 25.08%,
+    #0d9bbf 51.45%,
+    #1a1a1a 84.24%,
+    #1a1a1a 100%
+  );
   border-radius: 10px;
   transition: border-image-source 0.25s ease;
 }
@@ -171,12 +180,14 @@ body {
 .p-contact-form:hover {
   border-width: 1px solid;
   border-image: linear-gradient(to bottom, yellow, white, cyan) 1;
-  border-image-source: linear-gradient(to bottom,
-      #ffbf00 0%,
-      #ffffff 25.08%,
-      #0d9bbf 51.54%,
-      #ffffff 84.24%,
-      #ffff00 100%);
+  border-image-source: linear-gradient(
+    to bottom,
+    #ffbf00 0%,
+    #ffffff 25.08%,
+    #0d9bbf 51.54%,
+    #ffffff 84.24%,
+    #ffff00 100%
+  );
 
   transition: border-image-source 0.25s ease;
 }
@@ -373,11 +384,13 @@ body {
 .p-logo-slider::before,
 .p-logo-slider::after {
   height: 75px;
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(#1a1a1a),
-      to(rgba(255, 255, 255, 0)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#1a1a1a),
+    to(rgba(255, 255, 255, 0))
+  );
   background: linear-gradient(to right, white 100%);
   content: "";
   position: absolute;
@@ -592,9 +605,11 @@ body {
 
 .p-benefits-svg-container {
   border-radius: 70px;
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 0.05) 0%,
-      rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   display: flex;
   padding: 12px;
   align-items: flex-start;
@@ -603,9 +618,11 @@ body {
 
 .p-benefits-svg-second-container {
   border-radius: 50px;
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 0.1) -66.22%,
-      rgba(255, 255, 255, 0) 85.46%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) -66.22%,
+    rgba(255, 255, 255, 0) 85.46%
+  );
   display: flex;
   padding: 10px;
   align-items: flex-start;
@@ -632,7 +649,9 @@ body {
   display: flex;
   margin: auto;
 }
-
+.service-container {
+  margin-top: -120px;
+}
 .p-spotlight-blue-container {
   display: flex;
   justify-content: center;
@@ -643,9 +662,11 @@ body {
   width: 1040px;
   height: 198px;
   flex-shrink: 0;
-  background: radial-gradient(61.04% 43% at 52.17% 56.33%,
-      #000 0%,
-      rgba(0, 0, 0, 0) 70.95%);
+  background: radial-gradient(
+    61.04% 43% at 52.17% 56.33%,
+    #000 0%,
+    rgba(0, 0, 0, 0) 70.95%
+  );
 }
 
 .p-open-position p {
@@ -723,7 +744,7 @@ body {
   padding: 0px 100px;
   align-items: flex-start;
   width: 1176px;
-  color: var(--Woodsmoke----BG-200, #D1D1D1);
+  color: var(--Woodsmoke----BG-200, #d1d1d1);
   font-family: Quicksand;
   font-size: 36px;
   font-style: normal;
@@ -737,7 +758,6 @@ body {
 .p-component {
   display: none;
 }
-
 
 .p-apply-now {
   padding-top: 80px;
@@ -1242,10 +1262,12 @@ li {
   line-height: 120%;
   letter-spacing: -6px;
   text-transform: capitalize;
-  background: linear-gradient(92deg,
-      #ffbf00 17.84%,
-      #0d9bbf 48.87%,
-      #fff 87.19%);
+  background: linear-gradient(
+    92deg,
+    #ffbf00 17.84%,
+    #0d9bbf 48.87%,
+    #fff 87.19%
+  );
   -webkit-background-clip-: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
@@ -1279,16 +1301,18 @@ li {
   line-height: 120%;
   letter-spacing: -6px;
   text-transform: capitalize;
-  background: linear-gradient(92deg,
-      #ffbf00 17.84%,
-      #0d9bbf 48.87%,
-      #fff 87.19%,
-      #ffbf00);
+  background: linear-gradient(
+    92deg,
+    #ffbf00 17.84%,
+    #0d9bbf 48.87%,
+    #fff 87.19%,
+    #ffbf00
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 150% auto;
-  animation: textShine 15s ease-in-out infinite;
+  animation: textShine 8s ease-in-out infinite;
 }
 
 @keyframes textShine {
@@ -1325,11 +1349,13 @@ li {
 .p-logo-slider-logo::before,
 .p-logo-slider-logo::after {
   height: 75px;
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(#1a1a1a),
-      to(rgba(255, 255, 255, 0)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#1a1a1a),
+    to(rgba(255, 255, 255, 0))
+  );
   background: linear-gradient(to right, white 100%);
   content: "";
   position: absolute;
@@ -1466,9 +1492,11 @@ li {
   gap: 24px;
   border-radius: 8px;
   border: 1px solid rgba(202, 255, 51, 0.1);
-  background: linear-gradient(106deg,
+  background: linear-gradient(
+      106deg,
       rgba(255, 191, 0, 0.02) -29.45%,
-      rgba(255, 191, 0, 0) 27.86%),
+      rgba(255, 191, 0, 0) 27.86%
+    ),
     linear-gradient(267deg, #1c1c1c 40.67%, rgba(28, 28, 28, 0.5) 99.81%),
     url(./assets/aboutus-koios-bg.png);
   background-blend-mode: normal, normal, screen;
@@ -1519,22 +1547,25 @@ li {
 
 .p-benefits-svg-container.whyus {
   border-radius: 70px;
-  background: linear-gradient(180deg,
-      rgba(255, 191, 0, 0.05) 0%,
-      rgba(255, 191, 0, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 191, 0, 0.05) 0%,
+    rgba(255, 191, 0, 0) 100%
+  );
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .p-benefits-svg-second-container.whyus {
   border-radius: 50px;
-  background: linear-gradient(180deg,
-      rgba(255, 191, 0, 0.1) -66.22%,
-      rgba(255, 191, 0, 0) 85.46%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 191, 0, 0.1) -66.22%,
+    rgba(255, 191, 0, 0) 85.46%
+  );
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .p-our-services-container {
-  padding-top: 397px;
   z-index: 5;
   width: 800px;
   display: flex;
@@ -1602,9 +1633,11 @@ li {
   border-radius: 8px;
   border-radius: 10px;
   border: 1px solid #667085;
-  background: linear-gradient(267deg,
-      #1c1c1c 0.36%,
-      rgba(28, 28, 28, 0) 100.31%);
+  background: linear-gradient(
+    267deg,
+    #1c1c1c 0.36%,
+    rgba(28, 28, 28, 0) 100.31%
+  );
   display: flex;
   padding: 24px 120px;
   align-items: center;
@@ -1696,9 +1729,11 @@ li {
   border: 1px solid white;
   border-radius: 15px;
   border-bottom: 1.5px solid;
-  background: linear-gradient(42deg,
-      #1a1a1a 6.13%,
-      rgba(21, 21, 21, 0) 105.22%);
+  background: linear-gradient(
+    42deg,
+    #1a1a1a 6.13%,
+    rgba(21, 21, 21, 0) 105.22%
+  );
 }
 
 .svg1,
@@ -1746,19 +1781,45 @@ li {
   flex-shrink: 0;
   text-align: center;
   font-family: Quicksand;
-  font-size: 48px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 600;
   line-height: 60px;
   letter-spacing: -0.96px;
-  background: linear-gradient(93deg,
-      #fff 8.57%,
-      rgba(255, 255, 255, 0.75) 95.46%);
+  background: linear-gradient(
+    93deg,
+    #fff 8.57%,
+    rgba(255, 255, 255, 0.75) 95.46%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 0.3s ease-in-out;
 }
-
+#comeSpan,
+#questionSpan {
+  transition: 0.3s ease-in-out;
+}
+#changeText {
+  width: 640px;
+  flex-shrink: 0;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+  background: linear-gradient(
+    93deg,
+    #fff 8.57%,
+    rgba(255, 255, 255, 0.75) 95.46%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 1s ease-in-out;
+}
 .p-contact-button {
   cursor: pointer;
   border-radius: 50px;
@@ -1816,9 +1877,11 @@ li {
 .p-in-div {
   border-radius: 15px;
   border: 1.5px solid #ffbf00;
-  background: linear-gradient(43deg,
-      rgba(26, 26, 26, 0.6) 9.36%,
-      rgba(0, 0, 0, 0.41) 100.87%);
+  background: linear-gradient(
+    43deg,
+    rgba(26, 26, 26, 0.6) 9.36%,
+    rgba(0, 0, 0, 0.41) 100.87%
+  );
 }
 
 .p-mobile-title {
@@ -1909,9 +1972,11 @@ span {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.32px;
-  background: linear-gradient(90deg,
-      #fff 19.69%,
-      rgba(255, 255, 255, 0.6) 105.83%);
+  background: linear-gradient(
+    90deg,
+    #fff 19.69%,
+    rgba(255, 255, 255, 0.6) 105.83%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2271,7 +2336,6 @@ span {
   color: #ffffff;
 }
 
-
 .p-footer {
   padding-top: 40px;
   padding-left: 160px;
@@ -2387,7 +2451,6 @@ span {
   cursor: pointer;
 }
 
-
 @media only screen and (max-width: 1300px) {
   .p-text-main {
     padding-left: 0;
@@ -2476,7 +2539,9 @@ span {
   .p-details-text {
     width: fit-content;
   }
-
+  .service-container{
+    margin-top: 0;
+  }
   .p-our-services-container {
     padding-left: 20px;
     padding-right: 20px;
@@ -2675,7 +2740,7 @@ span {
   }
 
   .p-component h1 {
-    color: var(--Woodsmoke----BG-200, #D1D1D1);
+    color: var(--Woodsmoke----BG-200, #d1d1d1);
     font-family: Quicksand;
     font-size: 16px;
     font-style: normal;
@@ -2695,7 +2760,7 @@ span {
   }
 
   .p-parts p {
-    color: var(--Woodsmoke----BG-300, #B0B0B0) !important;
+    color: var(--Woodsmoke----BG-300, #b0b0b0) !important;
     text-align: center !important;
     font-family: Quicksand !important;
     font-size: 20px !important;
@@ -2736,9 +2801,11 @@ span {
     width: fit-content;
     padding-left: 30px;
     padding-right: 30px;
-    background: linear-gradient(90deg,
-        #fff 3.85%,
-        rgba(255, 255, 255, 0.6) 143.9%);
+    background: linear-gradient(
+      90deg,
+      #fff 3.85%,
+      rgba(255, 255, 255, 0.6) 143.9%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2948,9 +3015,11 @@ span {
     width: 100%;
     border-radius: 12px;
     border: 1px solid #0d9bbf;
-    background: linear-gradient(228deg,
-        #1c1c1c 0.94%,
-        rgba(28, 28, 28, 0) 104.91%);
+    background: linear-gradient(
+      228deg,
+      #1c1c1c 0.94%,
+      rgba(28, 28, 28, 0) 104.91%
+    );
     box-shadow: 0px 0px 15px 0px rgba(13, 155, 191, 0.1);
     display: flex;
     height: 317px;
@@ -2965,9 +3034,11 @@ span {
   .p-engineering-title.software {
     border-radius: 12px;
     border: 1px solid #ffbf00;
-    background: linear-gradient(228deg,
-        #1c1c1c 0.94%,
-        rgba(28, 28, 28, 0) 104.91%);
+    background: linear-gradient(
+      228deg,
+      #1c1c1c 0.94%,
+      rgba(28, 28, 28, 0) 104.91%
+    );
     box-shadow: 0px 0px 15px 0px rgba(13, 155, 191, 0.1);
     display: flex;
     padding: 20px;
@@ -2980,9 +3051,11 @@ span {
   .p-engineering-title.edutech {
     border-radius: 12px;
     border: 1px solid #fff;
-    background: linear-gradient(228deg,
-        #1c1c1c 0.94%,
-        rgba(28, 28, 28, 0) 104.91%);
+    background: linear-gradient(
+      228deg,
+      #1c1c1c 0.94%,
+      rgba(28, 28, 28, 0) 104.91%
+    );
     box-shadow: 0px 0px 15px 0px rgba(13, 155, 191, 0.1);
     display: flex;
     height: 317px;
@@ -3057,9 +3130,11 @@ span {
 
   .p-lets-establish {
     width: 335px;
-    background: linear-gradient(93deg,
-        #fff 8.57%,
-        rgba(255, 255, 255, 0.75) 95.46%);
+    background: linear-gradient(
+      93deg,
+      #fff 8.57%,
+      rgba(255, 255, 255, 0.75) 95.46%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -3169,9 +3244,11 @@ span {
     line-height: 72px;
     /* 200% */
     letter-spacing: -0.72px;
-    background: linear-gradient(90deg,
-        #fff 3.85%,
-        rgba(255, 255, 255, 0.6) 143.9%);
+    background: linear-gradient(
+      90deg,
+      #fff 3.85%,
+      rgba(255, 255, 255, 0.6) 143.9%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -3220,9 +3297,11 @@ span {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    background: linear-gradient(90deg,
-        #fff 3.85%,
-        rgba(255, 255, 255, 0.6) 143.9%);
+    background: linear-gradient(
+      90deg,
+      #fff 3.85%,
+      rgba(255, 255, 255, 0.6) 143.9%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -3287,9 +3366,11 @@ span {
     width: 28px;
     height: 28px;
     border-radius: 70px;
-    background: linear-gradient(180deg,
-        rgba(255, 255, 255, 0.05) 0%,
-        rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
     align-items: center;
     justify-content: center;
     display: flex;
@@ -3298,9 +3379,11 @@ span {
   .p-svg-secong-container {
     border-radius: 50px;
 
-    background: linear-gradient(180deg,
-        rgba(255, 255, 255, 0.1) -66.22%,
-        rgba(255, 255, 255, 0) 85.46%);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) -66.22%,
+      rgba(255, 255, 255, 0) 85.46%
+    );
     position: absolute;
     width: 22px;
     height: 22px;
@@ -3333,9 +3416,11 @@ span {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    background: linear-gradient(90deg,
-        #fff 3.85%,
-        rgba(255, 255, 255, 0.6) 143.9%);
+    background: linear-gradient(
+      90deg,
+      #fff 3.85%,
+      rgba(255, 255, 255, 0.6) 143.9%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -3704,10 +3789,12 @@ span {
     /* 52.8px */
     letter-spacing: -2.64px;
     text-transform: capitalize;
-    background: linear-gradient(92deg,
-        #ffbf00 17.84%,
-        #0d9bbf 48.87%,
-        #fff 87.19%);
+    background: linear-gradient(
+      92deg,
+      #ffbf00 17.84%,
+      #0d9bbf 48.87%,
+      #fff 87.19%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -3718,7 +3805,7 @@ span {
   }
 
   .p-parts p {
-    color: var(--Woodsmoke----BG-300, #B0B0B0) !important;
+    color: var(--Woodsmoke----BG-300, #b0b0b0) !important;
     text-align: center !important;
     font-family: Quicksand !important;
     font-size: 14px !important;

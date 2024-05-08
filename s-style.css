@@ -198,9 +198,9 @@
   color: var(--Woodsmoke----BG-950----bg, #1a1a1a);
   text-align: center;
   font-family: Quicksand;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
+  font-size: 16px;
+  font-style: bold;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -1173,6 +1173,7 @@
 }
 
 .s-aboutus-text {
+  padding-top: 5px;
   z-index: 10;
   display: flex;
   width: 800px;
@@ -1205,9 +1206,11 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 33px;
 }
-
+.s-aboutus-text .yellow{
+  color: #ffbf00;
+}
 .s-aboutus-text span::first-letter {
   text-transform: capitalize;
 }

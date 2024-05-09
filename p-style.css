@@ -2353,7 +2353,25 @@ span {
   flex-direction: column;
   align-items: center;
 }
-.p-privacy-policy-text{
+#content {
+  display: none;
+}
+
+.p-linkedin-extended a {
+  color: #98a2b3;
+  text-decoration: none;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.p-linkedin-extended {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-direction: row;
+}
+.p-privacy-policy-text {
   color: #ffbf00 !important;
 }
 .p-privacy-policy-main h1 {
@@ -2541,7 +2559,7 @@ span {
     padding-left: 180px;
     padding-right: 180px;
   }
-  .p-svg-text{
+  .p-svg-text {
     padding-left: 90px;
     padding-right: 90px;
   }

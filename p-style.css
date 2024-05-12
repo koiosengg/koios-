@@ -368,7 +368,13 @@ body {
 .p-logo-slider::before,
 .p-logo-slider::after {
   height: 75px;
-  background: -webkit-gradient(linear, left top, right top, from(#1a1a1a), to(rgba(255, 255, 255, 0)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#1a1a1a),
+    to(rgba(255, 255, 255, 0))
+  );
   content: "";
   position: absolute;
   width: 45px;
@@ -2342,12 +2348,14 @@ span {
   font-weight: 400;
   line-height: 28px;
 }
+.p-linkedin-extended a:hover {
+  color: #ffbf00;
+}
 .p-linkedin-extended {
   display: flex;
   gap: 24px;
   flex-direction: row;
   padding-top: 32px;
-  justify-content: center;
 }
 .p-privacy-policy-text {
   color: #ffbf00 !important;
@@ -2408,7 +2416,7 @@ span {
   color: #98a2b3;
   text-align: center;
 }
-.p-gd.location img{
+.p-gd.location img {
   width: 24px;
   height: 25px;
 }
@@ -2852,7 +2860,7 @@ span {
   .p-address-container {
     flex-direction: column;
   }
-  .p-address-container p{
+  .p-address-container p {
     text-align: left;
   }
   .p-gd {
@@ -3920,13 +3928,12 @@ span {
     font-weight: 400;
     line-height: 28px;
   }
-  .p-gd.location img{
+  .p-gd.location img {
     width: 21px;
     height: 21px;
   }
 
   .p-gd {
-    width: 230px;
     gap: 10px;
     text-align: left;
   }
@@ -4002,7 +4009,6 @@ span {
     padding-top: 8px;
     justify-content: center;
   }
-
   .p-policy-tos p {
     color: var(--gray---for-text-400, #98a2b3);
     font-family: Quicksand;
@@ -4011,6 +4017,9 @@ span {
     font-weight: 400;
     line-height: 28px;
     cursor: pointer;
+  }
+  .p-policy-tos {
+    width: 240px;
   }
 
   .p-back-career-button {

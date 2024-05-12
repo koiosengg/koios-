@@ -377,6 +377,35 @@
     box-shadow: -1px 4px 60px 0px rgba(255, 255, 255, 0.4);
   }
 }
+@keyframes glow3 {
+  0% {
+    border-image: linear-gradient(
+      to right,
+      transparent 0%,
+      transparent 50%,
+      #ffbf00 50%,
+      #ffbf00 50%,
+      transparent 50%,
+      transparent 100%
+    );
+    border-image-slice: 1;
+    box-shadow: 0px -1px 10px 0px rgba(255, 191, 0, 0);
+  }
+
+  100% {
+    border-image: linear-gradient(
+      to right,
+      transparent 0%,
+      transparent 10%,
+      #ffbf00 30%,
+      #ffbf00 70%,
+      transparent 90%,
+      transparent 100%
+    );
+    border-image-slice: 1;
+    box-shadow: 0px 2px 30px 0px #ffbf00;
+  }
+}
 
 .s-product-banner-logo img {
   width: 211px;
@@ -1184,6 +1213,8 @@
     #101010 95.85%
   );
   box-shadow: 0px 2px 100px 2px rgba(255, 191, 0, 0.1);
+  border-bottom: 1px solid #ffbf00;
+  animation: glow3 1s ease-in forwards;
 }
 
 .s-aboutus-logo svg {

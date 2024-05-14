@@ -66,6 +66,99 @@ body {
   line-height: 28px;
 }
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.logos {
+  animation-play-state: running;
+}
+
+/* .logos-slide:hover {
+  animation-play-state: paused;
+} */
+.logos {
+  overflow: hidden;
+  padding: 30px 0;
+  background: #1a1a1a;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos::before {
+  height: 75px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#1a1a1a),
+    to(rgba(255, 255, 255, 0))
+  );
+  content: "";
+  position: absolute;
+  width: 45px;
+  z-index: 1;
+  border-radius: 0 50px 50px 0;
+}
+.logos::after{
+  height: 75px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#1a1a1a),
+    to(rgba(255, 255, 255, 0))
+  );
+  content: "";
+  position: absolute;
+  width: 45px;
+  z-index: 1;
+  border-radius: 0 50px 50px 0;
+}
+
+
+.logos-slide {
+  display: inline-block;
+  animation: 25s slide infinite linear;
+}
+
+/* .logos-slide svg,
+img {
+  margin: 0 40px;
+} */
+.egginno {
+  height: 80px;
+  padding-top: 20px;
+}
+.malgudi,
+.sukalpa-tech,
+.fourstar {
+  padding-top: 20px;
+  height: 84px;
+  width: 150px;
+}
+.greenway {
+  width: 200px;
+}
+.pmmf {
+  height: 84px;
+  width: 150px;
+}
+.consult {
+  height: 84px;
+  width: 150px;
+}
+.p-logos-container {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 240px;
+}
 .p-shape-future.enhance {
   padding-bottom: 80px;
 }
@@ -162,18 +255,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  border-width: 1px;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, yellow, white, cyan) 1;
-  border-image-source: linear-gradient(
-    180deg,
-    #ffbf00 0%,
-    #ffffff 25.08%,
-    #0d9bbf 51.45%,
-    #1a1a1a 84.24%,
-    #1a1a1a 100%
-  );
-  border-radius: 10px;
+  border: 1px solid;
+  border-image: linear-gradient(to bottom, #ffbf00 0%, #ffffff 25.08%, #0d9bbf 51.45%, #ffffff 84.24%, #ffbf00 100%) 1;
+  border-radius: 10px; /* Adjust the value as needed */
+  -webkit-mask-composite: xor; /*5'*/
+          mask-composite: exclude; /*5*/
+
 }
 
 .p-contact-form input {
@@ -1733,6 +1820,7 @@ li {
   width: 164px;
   height: 164px;
   flex-shrink: 0;
+  margin: 0px;
 }
 
 .p-circle-svg:hover .svg1 {
@@ -2022,6 +2110,7 @@ span {
   width: 100%;
   height: auto;
   display: block;
+  margin: 0%;
 }
 
 .p-circle-svg {
@@ -3126,7 +3215,10 @@ span {
     flex-shrink: 0;
     align-self: stretch;
   }
-
+.p-logos-container{
+  padding-left: 30px;
+  padding-right: 30px;
+}
   .p-engineering-title.software {
     border-radius: 12px;
     border: 1px solid #ffbf00;
@@ -3251,6 +3343,7 @@ span {
   .svg2 {
     height: 70px;
     width: 70px;
+  
   }
 
   .svg1 {
@@ -4017,9 +4110,6 @@ span {
     font-weight: 400;
     line-height: 28px;
     cursor: pointer;
-  }
-  .p-policy-tos {
-    width: 240px;
   }
 
   .p-back-career-button {

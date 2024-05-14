@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Koios Engineering Solutions</title>
-    <meta name="description" content="Experience Innovation with Koios Engineering Solutions. Explore our expertise in Education Technology and Website Development to elevate your digital presence today! See Details!" />
+    <meta
+      name="description"
+      content="Experience Innovation with Koios Engineering Solutions. Explore our expertise in Education Technology and Website Development to elevate your digital presence today! See Details!"
+    />
     <link rel="stylesheet" href="./p-style.css" />
     <link rel="stylesheet" href="./s-style.css" />
     <link rel="icon" type="image/x-icon" href="./s-public/black no name.svg" />
@@ -139,7 +142,7 @@
               </div>
               <div class="s-dropdown-set">
                 <div class="heading">
-                  <a href="">Mechanical</a>
+                  <a href="./mechanical design.html">Mechanical</a>
                 </div>
                 <div class="s-dropdown-options">
                   <a href="./mechanical design.html">Mechanical Design</a>
@@ -150,7 +153,7 @@
               </div>
               <div class="s-dropdown-set">
                 <div class="heading">
-                  <a href="">Automotive</a>
+                  <a href="./automotive design.html">Automotive</a>
                 </div>
                 <div class="s-dropdown-options">
                   <a href="./automotive design.html">Automotive Design</a>
@@ -276,7 +279,6 @@
         </svg>
       </div>
     </div>
-
     <div class="s-mobile-navbar">
       <div class="s-mobile-navbar-cancel-button">
         <svg
@@ -319,7 +321,10 @@
             </div>
             <div class="s-mobile-nav-list-container">
               <div class="s-mobile-nav-list-item">
-                <a href="" style="padding: 2px; text-decoration: none">
+                <a
+                  href="./mechanical design.html"
+                  style="padding: 2px; text-decoration: none"
+                >
                   <p>Mechanical</p>
                 </a>
                 <a href="./mechanical design.html" class="sub-link">
@@ -330,7 +335,10 @@
                 </a>
               </div>
               <div class="s-mobile-nav-list-item">
-                <a href="" style="padding: 2px; text-decoration: none">
+                <a
+                  href="./automotive design.html"
+                  style="padding: 2px; text-decoration: none"
+                >
                   <p>Automotive</p>
                 </a>
                 <a href="./automotive design.html" class="sub-link">
@@ -344,7 +352,10 @@
                 </a>
               </div>
               <div class="s-mobile-nav-list-item">
-                <a href="" style="padding: 2px; text-decoration: none">
+                <a
+                  href="./e-go kart.html"
+                  style="padding: 2px; text-decoration: none"
+                >
                   <p>Product</p>
                 </a>
                 <a href="./e-go kart.html" class="sub-link">
@@ -2690,8 +2701,15 @@
             </svg>
             <img loading="lazy" class="svg2" src="./assets/svgt.png" />
           </div>
-          <div id="changeText" class="text-container">
-            <span id="wholeLine">Come with a Question</span>
+        </div>
+        <div class="we-deliver">
+          <div class="we-deliver-text-container">
+            <div class="we-deliver-main visible">
+              <p>Come with a Question</p>
+            </div>
+            <div class="we-deliver-main">
+              <p>Leave with a Solution</p>
+            </div>
           </div>
         </div>
         <div class="p-side-button-container">
@@ -2751,7 +2769,7 @@
       </div>
       <div class="p-footer">
         <div class="p-koios">
-          <img loading="lazy" src="./assets/logo1.svg" style="margin: 0px;" />
+          <img loading="lazy" src="./assets/logo1.svg" style="margin: 0px" />
           <h1>Koios Engineering Solutions</h1>
         </div>
         <div class="p-rights-reserved mobile">© 2023 All rights reserved.</div>
@@ -2818,7 +2836,7 @@
 
         <div class="p-address-container">
           <div class="p-call-div">
-            <div class="p-gd">
+            <div class="p-gd" onclick="window.location.href='tel:+1234567890'">
               <svg
                 width="24"
                 height="25"
@@ -2835,7 +2853,10 @@
             </div>
           </div>
           <div class="p-location-div">
-            <div class="p-gd location">
+            <div
+              class="p-gd location"
+              onclick="window.location.href='https://goo.gl/maps/KuzN7PQg41F6wX9x9'"
+            >
               <img
                 src="./assets/location svg.png"
                 height="21px"
@@ -2849,7 +2870,10 @@
             </div>
           </div>
           <div class="p-mail-div">
-            <div class="p-gd">
+            <div
+              class="p-gd"
+              onclick="window.location.href='mailto:info@koiosengg.com';"
+            >
               <svg
                 width="24"
                 height="25"
@@ -3178,51 +3202,36 @@
       // Start observing the target div
       observer.observe(circleDiv);
 
-      // Function to change text after a delay
-      function changeText() {
-        setTimeout(function () {
-          var wholeLineSpan = document.getElementById("wholeLine");
-          if (wholeLineSpan) {
-            var currentText = wholeLineSpan.textContent.trim();
-            if (currentText === "Come with a Question") {
-              wholeLineSpan.textContent = "Leave with a Solution";
-            } else {
-              wholeLineSpan.textContent = "Come with a Question";
-            }
-          } else {
-            console.error('Element with id "wholeLine" not found');
-          }
+      document.addEventListener("DOMContentLoaded", function () {
+        const divs = document.querySelectorAll(".we-deliver-main");
 
-          var element = document.getElementById("changeText");
-          if (element) {
-            element.classList.toggle("p-lets-establish");
-            element.classList.toggle("p-lets-leave");
-          } else {
-            console.error('Element with id "changeText" not found');
-          }
+        function hideElement(element) {
+          element.classList.remove("visible");
+          element.classList.add("hidden");
+        }
 
-          // Call the function again for next change
-          changeText();
-        }, 2000);
-      }
+        function showElement(element) {
+          element.classList.remove("hidden");
+          element.classList.add("visible");
+        }
 
-      // Call the functions when the page loads
-      window.onload = function () {
-        changeText();
-      };
+        function showNext() {
+          const currentIndex = Array.from(divs).findIndex((div) =>
+            div.classList.contains("visible")
+          );
+          const nextIndex = (currentIndex + 1) % divs.length;
 
-      document
-        .getElementById("toggleLink")
-        .addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent the default action of the link
+          hideElement(divs[currentIndex]);
+          showElement(divs[nextIndex]);
+        }
 
-          var content = document.getElementById("content");
-          if (content.style.display === "none") {
-            content.style.display = "block";
-          } else {
-            content.style.display = "none";
-          }
-        });
+        // Initially hide all but the first div
+        for (let i = 1; i < divs.length; i++) {
+          hideElement(divs[i]);
+        }
+
+        setInterval(showNext, 2000); // Change every 3 seconds
+      });
     </script>
 
     <script src="./particles.js"></script>

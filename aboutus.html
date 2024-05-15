@@ -1175,63 +1175,50 @@
       // Start observing the target div
       observer.observe(circleDiv);
 
-
-
-
-
-
-
-
-
-
-
-
       const numberDisplayElement1 = document.getElementById("numberDisplay");
-const numberDisplayElement2 = document.getElementById("yearDisplay");
-const numberDisplayElement3 = document.getElementById("companyDisplay");
+      const numberDisplayElement2 = document.getElementById("yearDisplay");
+      const numberDisplayElement3 = document.getElementById("companyDisplay");
 
-let currentNumber1 = 1450;
-let currentNumber2 = 0;
-let currentNumber3 = 0;
+      let currentNumber1 = 1450;
+      let currentNumber2 = 0;
+      let currentNumber3 = 0;
 
-const targetNumber1 = 2022;
-const targetNumber2 = 70;
-const targetNumber3 = 13;
+      const targetNumber1 = 2022;
+      const targetNumber2 = 70;
+      const targetNumber3 = 13;
 
-function updateNumbers() {
-  if (currentNumber1 < targetNumber1) {
-    currentNumber1 = currentNumber1 + 8;
-    if (currentNumber1 >= targetNumber1) {
-      currentNumber1 = targetNumber1;
-    }
-    numberDisplayElement1.innerText = currentNumber1;
-  }
-  if (currentNumber2 < targetNumber2) {
-    currentNumber2++;
-    if (currentNumber2 >= targetNumber2) {
-      currentNumber2 = targetNumber2;
-    }
-    numberDisplayElement2.innerText = currentNumber2 + "+";
-  }
-  if (currentNumber3 < targetNumber3) {
-    currentNumber3 = currentNumber3 + 5;
-    if (currentNumber3 >= targetNumber3) {
-      currentNumber3 = targetNumber3;
-    }
-    numberDisplayElement3.innerText = currentNumber3 + "+";
-  }
-  if (currentNumber1 >= targetNumber1 && currentNumber2 >= targetNumber2 && currentNumber3 >= targetNumber3) {
-    clearInterval(intervalId); // Stop the interval if all targets are reached
-  }
-}
+      function updateNumbers() {
+        if (currentNumber1 < targetNumber1) {
+          currentNumber1 = currentNumber1 + 8;
+          if (currentNumber1 >= targetNumber1) {
+            currentNumber1 = targetNumber1;
+          }
+          numberDisplayElement1.innerText = currentNumber1;
+        }
+        if (currentNumber2 < targetNumber2) {
+          currentNumber2++;
+          if (currentNumber2 >= targetNumber2) {
+            currentNumber2 = targetNumber2;
+          }
+          numberDisplayElement2.innerText = currentNumber2 + "+";
+        }
+        if (currentNumber3 < targetNumber3) {
+          currentNumber3 = currentNumber3 + 5;
+          if (currentNumber3 >= targetNumber3) {
+            currentNumber3 = targetNumber3;
+          }
+          numberDisplayElement3.innerText = currentNumber3 + "+";
+        }
+        if (
+          currentNumber1 >= targetNumber1 &&
+          currentNumber2 >= targetNumber2 &&
+          currentNumber3 >= targetNumber3
+        ) {
+          clearInterval(intervalId); // Stop the interval if all targets are reached
+        }
+      }
 
-const intervalId = setInterval(updateNumbers, 50);
-
-
-
-
-
-
+      const intervalId = setInterval(updateNumbers, 50);
 
       // Create a new Intersection Observer
       var observer = new IntersectionObserver(handleIntersect, options);
@@ -1269,7 +1256,6 @@ const intervalId = setInterval(updateNumbers, 50);
 
         setInterval(showNext, 2000); // Change every 3 seconds
       });
-
     </script>
   </body>
 </html>

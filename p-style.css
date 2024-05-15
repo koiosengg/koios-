@@ -66,6 +66,7 @@ body {
     transform: translateY(50%);
     opacity: 0;
   }
+
   to {
     transform: translateY(0%);
     opacity: 1;
@@ -81,11 +82,13 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+
   to {
     transform: translateY(-100%);
     opacity: 0;
   }
 }
+
 .we-deliver {
   display: flex;
   padding: 24px 0px;
@@ -2631,10 +2634,12 @@ span {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
 }
+
 .p-logos {
   animation-play-state: running;
 }
@@ -2661,6 +2666,7 @@ span {
   z-index: 1;
   border-radius: 0 50px 50px 0;
 }
+
 .p-logos::after {
   height: 75px;
   background: -webkit-gradient(
@@ -2685,6 +2691,7 @@ span {
   height: 80px;
   padding-top: 20px;
 }
+
 .malgudi,
 .sukalpa-tech,
 .fourstar {
@@ -2692,17 +2699,21 @@ span {
   height: 84px;
   width: 150px;
 }
+
 .greenway {
   width: 200px;
 }
+
 .pmmf {
   height: 84px;
   width: 150px;
 }
+
 .consult {
   height: 84px;
   width: 150px;
 }
+
 .p-logos-container {
   padding-left: 200px;
   padding-right: 200px;
@@ -2717,6 +2728,7 @@ span {
   gap: 56px;
   align-self: stretch;
 }
+
 .validator-content {
   display: flex;
   flex-direction: column;
@@ -2730,6 +2742,7 @@ span {
   padding-right: 38px;
   align-items: center;
 }
+
 .validator-content-number span {
   color: var(--Cinnabar-600-primary, #ed1c24);
   font-family: Lato;
@@ -2843,10 +2856,12 @@ span {
     padding-left: 60px;
     padding-right: 60px;
   }
+
   .p-logos-container {
     padding-left: 60px;
     padding-right: 60px;
   }
+
   .p-cards-container {
     padding-left: 90px;
     padding-right: 90px;
@@ -4186,6 +4201,7 @@ span {
     padding-top: 0;
     padding-bottom: 0;
   }
+
   .we-deliver-main p {
     width: 335px;
     background: linear-gradient(
@@ -4201,8 +4217,10 @@ span {
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
+    /* 150% */
   }
+
   /* Responsive footer */
   .p-footer {
     padding-left: 30px;

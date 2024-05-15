@@ -257,7 +257,7 @@ var pJS = function (tag_id, params) {
       if (color.value instanceof Array) {
         var color_selected =
           color.value[
-          Math.floor(Math.random() * pJS.particles.color.value.length)
+            Math.floor(Math.random() * pJS.particles.color.value.length)
           ];
         this.color.rgb = hexToRgb(color_selected);
       } else {
@@ -693,8 +693,8 @@ var pJS = function (tag_id, params) {
       var opacity_line =
         pJS.particles.line_linked.opacity -
         dist /
-        (1 / pJS.particles.line_linked.opacity) /
-        pJS.particles.line_linked.distance;
+          (1 / pJS.particles.line_linked.opacity) /
+          pJS.particles.line_linked.distance;
 
       if (opacity_line > 0) {
         /* style */
@@ -843,7 +843,7 @@ var pJS = function (tag_id, params) {
                 p.opacity -
                 (pJS.particles.opacity.value -
                   pJS.interactivity.modes.bubble.opacity) *
-                ratio;
+                  ratio;
               if (
                 opacity < p.opacity &&
                 opacity >= pJS.interactivity.modes.bubble.opacity
@@ -862,7 +862,6 @@ var pJS = function (tag_id, params) {
         init();
       }
     } else if (
-
       /* on click event */
       pJS.interactivity.events.onclick.enable &&
       isInArray("bubble", pJS.interactivity.events.onclick.mode)
@@ -894,7 +893,7 @@ var pJS = function (tag_id, params) {
                 var value =
                   p_obj -
                   (time_spent * (p_obj - bubble_param)) /
-                  pJS.interactivity.modes.bubble.duration;
+                    pJS.interactivity.modes.bubble.duration;
                 if (id == "size") p.radius_bubble = value;
                 if (id == "opacity") p.opacity_bubble = value;
               }
@@ -905,9 +904,9 @@ var pJS = function (tag_id, params) {
           } else {
             if (p_obj_bubble != undefined) {
               var value_tmp =
-                p_obj -
-                (time_spent * (p_obj - bubble_param)) /
-                pJS.interactivity.modes.bubble.duration,
+                  p_obj -
+                  (time_spent * (p_obj - bubble_param)) /
+                    pJS.interactivity.modes.bubble.duration,
                 dif = bubble_param - value_tmp;
               value = bubble_param + dif;
               if (id == "size") p.radius_bubble = value;
@@ -953,9 +952,9 @@ var pJS = function (tag_id, params) {
         velocity = 100,
         repulseFactor = clamp(
           (1 / repulseRadius) *
-          (-1 * Math.pow(dist_mouse / repulseRadius, 2) + 1) *
-          repulseRadius *
-          velocity,
+            (-1 * Math.pow(dist_mouse / repulseRadius, 2) + 1) *
+            repulseRadius *
+            velocity,
           0,
           50
         );
@@ -1050,8 +1049,8 @@ var pJS = function (tag_id, params) {
         var opacity_line =
           pJS.interactivity.modes.grab.line_linked.opacity -
           dist_mouse /
-          (1 / pJS.interactivity.modes.grab.line_linked.opacity) /
-          pJS.interactivity.modes.grab.distance;
+            (1 / pJS.interactivity.modes.grab.line_linked.opacity) /
+            pJS.interactivity.modes.grab.distance;
 
         if (opacity_line > 0) {
           /* style */
@@ -1250,8 +1249,8 @@ var pJS = function (tag_id, params) {
 
     /* prepare to create img with colored svg */
     var svg = new Blob([coloredSvgXml], {
-      type: "image/svg+xml;charset=utf-8",
-    }),
+        type: "image/svg+xml;charset=utf-8",
+      }),
       DOMURL = window.URL || window.webkitURL || window,
       url = DOMURL.createObjectURL(svg);
 
@@ -1472,10 +1471,10 @@ function hexToRgb(hex) {
   var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   return result
     ? {
-      r: parseInt(result[1], 16),
-      g: parseInt(result[2], 16),
-      b: parseInt(result[3], 16),
-    }
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16),
+      }
     : null;
 }
 

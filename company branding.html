@@ -6,7 +6,7 @@
     <title>Company Branding</title>
     <meta
       name="description"
-      content="Enhance Your Brand Identity with Koios Branding Services. From Logo Design and Company Branding to Typography and Color Setting, we offer a comprehensive suite of services including Letterhead, Business Card Designs, Flyers, Posters, T-Shirt Printing, and more. Elevate your brand today"
+      content="Enhance Your Brand Identity with Koios Branding Services. From Logo Design and Company Branding to Typography and Color Setting, we offer a comprehensive suite of services including Letterhead, Business Card Designs, Flyers, Posters, T-Shirt Printing, and more. Elevate your brand today"
     />
     <link rel="stylesheet" href="p-style.css" />
     <link rel="stylesheet" href="./s-style.css" />
@@ -893,53 +893,54 @@
         </div>
       </div>
     </div>
-    <script>// Define handleIntersect function
+    <script>
+      // Define handleIntersect function
       function handleIntersect(entries, observer) {
         entries.forEach((entry) => {
           // Your intersection handling logic here
           console.log(entry);
         });
       }
-      
+
       document.addEventListener("DOMContentLoaded", function () {
         const divs = document.querySelectorAll(".we-deliver-main");
-      
+
         if (divs.length > 0) {
           // Create a new Intersection Observer
           var observer = new IntersectionObserver(handleIntersect, options);
-      
+
           // Start observing the target div
           observer.observe(circleDiv);
         }
-      
+
         function hideElement(element) {
           element.classList.remove("visible");
           element.classList.add("hidden");
         }
-      
+
         function showElement(element) {
           element.classList.remove("hidden");
           element.classList.add("visible");
         }
-      
+
         function showNext() {
           const currentIndex = Array.from(divs).findIndex((div) =>
             div.classList.contains("visible")
           );
           const nextIndex = (currentIndex + 1) % divs.length;
-      
+
           hideElement(divs[currentIndex]);
           showElement(divs[nextIndex]);
         }
-      
+
         // Initially hide all but the first div
         for (let i = 1; i < divs.length; i++) {
           hideElement(divs[i]);
         }
-      
+
         setInterval(showNext, 2000); // Change every 3 seconds
       });
-      </script>
+    </script>
     <script src="./index.js"></script>
   </body>
 </html>

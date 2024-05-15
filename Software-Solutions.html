@@ -8,30 +8,6 @@
       name="description"
       content="Elevate Your Digital Presence with Koios. Dive into our comprehensive Software Solutions, including Website Design, Development, App Design, and Development, alongside Creative Designing, for a captivating online experience. Visit Now!"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Allerta+Stencil&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
 
     <link rel="stylesheet" href="./s-style.css" />
     <link rel="stylesheet" href="./p-style.css" />
@@ -2765,55 +2741,52 @@
         });
       });
 
-
-
       // Define handleIntersect function
-function handleIntersect(entries, observer) {
-  entries.forEach((entry) => {
-    // Your intersection handling logic here
-    console.log(entry);
-  });
-}
+      function handleIntersect(entries, observer) {
+        entries.forEach((entry) => {
+          // Your intersection handling logic here
+          console.log(entry);
+        });
+      }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const divs = document.querySelectorAll(".we-deliver-main");
+      document.addEventListener("DOMContentLoaded", function () {
+        const divs = document.querySelectorAll(".we-deliver-main");
 
-  if (divs.length > 0) {
-    // Create a new Intersection Observer
-    var observer = new IntersectionObserver(handleIntersect, options);
+        if (divs.length > 0) {
+          // Create a new Intersection Observer
+          var observer = new IntersectionObserver(handleIntersect, options);
 
-    // Start observing the target div
-    observer.observe(circleDiv);
-  }
+          // Start observing the target div
+          observer.observe(circleDiv);
+        }
 
-  function hideElement(element) {
-    element.classList.remove("visible");
-    element.classList.add("hidden");
-  }
+        function hideElement(element) {
+          element.classList.remove("visible");
+          element.classList.add("hidden");
+        }
 
-  function showElement(element) {
-    element.classList.remove("hidden");
-    element.classList.add("visible");
-  }
+        function showElement(element) {
+          element.classList.remove("hidden");
+          element.classList.add("visible");
+        }
 
-  function showNext() {
-    const currentIndex = Array.from(divs).findIndex((div) =>
-      div.classList.contains("visible")
-    );
-    const nextIndex = (currentIndex + 1) % divs.length;
+        function showNext() {
+          const currentIndex = Array.from(divs).findIndex((div) =>
+            div.classList.contains("visible")
+          );
+          const nextIndex = (currentIndex + 1) % divs.length;
 
-    hideElement(divs[currentIndex]);
-    showElement(divs[nextIndex]);
-  }
+          hideElement(divs[currentIndex]);
+          showElement(divs[nextIndex]);
+        }
 
-  // Initially hide all but the first div
-  for (let i = 1; i < divs.length; i++) {
-    hideElement(divs[i]);
-  }
+        // Initially hide all but the first div
+        for (let i = 1; i < divs.length; i++) {
+          hideElement(divs[i]);
+        }
 
-  setInterval(showNext, 2000); // Change every 3 seconds
-});
-
+        setInterval(showNext, 2000); // Change every 3 seconds
+      });
     </script>
     <script src="./index.js"></script>
   </body>

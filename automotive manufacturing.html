@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Automotive Manufacturing</title>
-    <meta name="description" content="Drive innovation in automotive manufacturing with Koios Engineering Solutions. Specializing in vehicle component, chassis, suspension spring, and SPMS manufacturing, we deliver quality solutions for the future of mobility. Explore our expertise now!" />
+    <meta
+      name="description"
+      content="Drive innovation in automotive manufacturing with Koios Engineering Solutions. Specializing in vehicle component, chassis, suspension spring, and SPMS manufacturing, we deliver quality solutions for the future of mobility. Explore our expertise now!"
+    />
     <link rel="stylesheet" href="p-style.css" />
     <link rel="stylesheet" href="./s-style.css" />
     <link rel="icon" type="image/x-icon" href="./s-public/black no name.svg" />
@@ -1097,55 +1100,54 @@
         </div>
       </div>
     </div>
-<script>
-  // Define handleIntersect function
-function handleIntersect(entries, observer) {
-  entries.forEach((entry) => {
-    // Your intersection handling logic here
-    console.log(entry);
-  });
-}
+    <script>
+      // Define handleIntersect function
+      function handleIntersect(entries, observer) {
+        entries.forEach((entry) => {
+          // Your intersection handling logic here
+          console.log(entry);
+        });
+      }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const divs = document.querySelectorAll(".we-deliver-main");
+      document.addEventListener("DOMContentLoaded", function () {
+        const divs = document.querySelectorAll(".we-deliver-main");
 
-  if (divs.length > 0) {
-    // Create a new Intersection Observer
-    var observer = new IntersectionObserver(handleIntersect, options);
+        if (divs.length > 0) {
+          // Create a new Intersection Observer
+          var observer = new IntersectionObserver(handleIntersect, options);
 
-    // Start observing the target div
-    observer.observe(circleDiv);
-  }
+          // Start observing the target div
+          observer.observe(circleDiv);
+        }
 
-  function hideElement(element) {
-    element.classList.remove("visible");
-    element.classList.add("hidden");
-  }
+        function hideElement(element) {
+          element.classList.remove("visible");
+          element.classList.add("hidden");
+        }
 
-  function showElement(element) {
-    element.classList.remove("hidden");
-    element.classList.add("visible");
-  }
+        function showElement(element) {
+          element.classList.remove("hidden");
+          element.classList.add("visible");
+        }
 
-  function showNext() {
-    const currentIndex = Array.from(divs).findIndex((div) =>
-      div.classList.contains("visible")
-    );
-    const nextIndex = (currentIndex + 1) % divs.length;
+        function showNext() {
+          const currentIndex = Array.from(divs).findIndex((div) =>
+            div.classList.contains("visible")
+          );
+          const nextIndex = (currentIndex + 1) % divs.length;
 
-    hideElement(divs[currentIndex]);
-    showElement(divs[nextIndex]);
-  }
+          hideElement(divs[currentIndex]);
+          showElement(divs[nextIndex]);
+        }
 
-  // Initially hide all but the first div
-  for (let i = 1; i < divs.length; i++) {
-    hideElement(divs[i]);
-  }
+        // Initially hide all but the first div
+        for (let i = 1; i < divs.length; i++) {
+          hideElement(divs[i]);
+        }
 
-  setInterval(showNext, 2000); // Change every 3 seconds
-});
-
-</script>
+        setInterval(showNext, 2000); // Change every 3 seconds
+      });
+    </script>
     <script src="./index.js"></script>
   </body>
 </html>

@@ -8,30 +8,6 @@
       name="description"
       content="Explore Koios' Edutech seminars and webinars covering electric vehicle design and development, as well as courses on ISO and EMS standards. Gain valuable insights into sustainable transportation and industry best practices. Enroll now to stay ahead of the curve!"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Allerta+Stencil&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="icon" type="image/x-icon" href="./s-public/black no name.svg" />
     <link rel="stylesheet" href="./s-style.css" />
     <link rel="stylesheet" href="./p-style.css" />
@@ -677,7 +653,10 @@
             <div class="s-carousel-indicator"></div>
           </div>
           <p class="subpage-desc">
-            Join our webinars led by seasoned trainers with 30+ years of corporate training experience in MNCs. Explore topics like electric vehicle design, ISO, EMS, and more, empowering you with industry-leading expertise.
+            Join our webinars led by seasoned trainers with 30+ years of
+            corporate training experience in MNCs. Explore topics like electric
+            vehicle design, ISO, EMS, and more, empowering you with
+            industry-leading expertise.
           </p>
           <a href="./contact.html">
             <span>Contact Us</span>
@@ -703,9 +682,21 @@
         <div class="s-product-list-set-container">
           <div class="s-product-img-carousel">
             <div class="s-slider">
-              <img loading="lazy" src="./assets/seminar/seminar image 1.jpg" alt="seminar image 1" />
-              <img loading="lazy" src="./assets/seminar/seminar image 2.jpg" alt="seminar image 2" />
-              <img loading="lazy" src="./assets/seminar/seminar image 3.jpg" alt="seminar image 3" />
+              <img
+                loading="lazy"
+                src="./assets/seminar/seminar image 1.jpg"
+                alt="seminar image 1"
+              />
+              <img
+                loading="lazy"
+                src="./assets/seminar/seminar image 2.jpg"
+                alt="seminar image 2"
+              />
+              <img
+                loading="lazy"
+                src="./assets/seminar/seminar image 3.jpg"
+                alt="seminar image 3"
+              />
             </div>
             <div class="s-carousel-buttons s-next-img">
               <svg
@@ -738,7 +729,10 @@
             <div class="s-carousel-indicator"></div>
           </div>
           <p class="subpage-desc">
-            Empower your students with hands-on seminars and workshops led by our seasoned trainers with over 30 years of corporate training experience in MNCs. Explore electric vehicle design, ISO, EMS, and more!
+            Empower your students with hands-on seminars and workshops led by
+            our seasoned trainers with over 30 years of corporate training
+            experience in MNCs. Explore electric vehicle design,
+            ISO, EMS, and more!
           </p>
           <a href="./contact.html">
             <span>Contact Us</span>
@@ -1130,56 +1124,52 @@
         });
       });
 
-
-
-
       // Define handleIntersect function
-function handleIntersect(entries, observer) {
-  entries.forEach((entry) => {
-    // Your intersection handling logic here
-    console.log(entry);
-  });
-}
+      function handleIntersect(entries, observer) {
+        entries.forEach((entry) => {
+          // Your intersection handling logic here
+          console.log(entry);
+        });
+      }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const divs = document.querySelectorAll(".we-deliver-main");
+      document.addEventListener("DOMContentLoaded", function () {
+        const divs = document.querySelectorAll(".we-deliver-main");
 
-  if (divs.length > 0) {
-    // Create a new Intersection Observer
-    var observer = new IntersectionObserver(handleIntersect, options);
+        if (divs.length > 0) {
+          // Create a new Intersection Observer
+          var observer = new IntersectionObserver(handleIntersect, options);
 
-    // Start observing the target div
-    observer.observe(circleDiv);
-  }
+          // Start observing the target div
+          observer.observe(circleDiv);
+        }
 
-  function hideElement(element) {
-    element.classList.remove("visible");
-    element.classList.add("hidden");
-  }
+        function hideElement(element) {
+          element.classList.remove("visible");
+          element.classList.add("hidden");
+        }
 
-  function showElement(element) {
-    element.classList.remove("hidden");
-    element.classList.add("visible");
-  }
+        function showElement(element) {
+          element.classList.remove("hidden");
+          element.classList.add("visible");
+        }
 
-  function showNext() {
-    const currentIndex = Array.from(divs).findIndex((div) =>
-      div.classList.contains("visible")
-    );
-    const nextIndex = (currentIndex + 1) % divs.length;
+        function showNext() {
+          const currentIndex = Array.from(divs).findIndex((div) =>
+            div.classList.contains("visible")
+          );
+          const nextIndex = (currentIndex + 1) % divs.length;
 
-    hideElement(divs[currentIndex]);
-    showElement(divs[nextIndex]);
-  }
+          hideElement(divs[currentIndex]);
+          showElement(divs[nextIndex]);
+        }
 
-  // Initially hide all but the first div
-  for (let i = 1; i < divs.length; i++) {
-    hideElement(divs[i]);
-  }
+        // Initially hide all but the first div
+        for (let i = 1; i < divs.length; i++) {
+          hideElement(divs[i]);
+        }
 
-  setInterval(showNext, 2000); // Change every 3 seconds
-});
-
+        setInterval(showNext, 2000); // Change every 3 seconds
+      });
     </script>
     <script src="./index.js"></script>
   </body>

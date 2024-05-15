@@ -607,15 +607,15 @@
 
     <div class="s-aboutus-validators">
       <div class="s-validators-set">
-        <p>2022</p>
+        <p id="numberDisplay">2022</p>
         <span>Founded</span>
       </div>
       <div class="s-validators-set">
-        <p>70+</p>
+        <p id="yearDisplay">70+</p>
         <span>Projects</span>
       </div>
       <div class="s-validators-set">
-        <p>13+</p>
+        <p id="companyDisplay">13+</p>
         <span>Clients</span>
       </div>
     </div>
@@ -786,8 +786,15 @@
             </svg>
             <img loading="lazy" class="svg2" src="./assets/svgt.png" />
           </div>
-          <div id="changeText" class="text-container">
-            <span id="wholeLine">Come with a Question</span>
+          <div class="we-deliver">
+            <div class="we-deliver-text-container">
+              <div class="we-deliver-main visible">
+                <p>Come with a Question</p>
+              </div>
+              <div class="we-deliver-main">
+                <p>Leave with a Solution</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="p-side-button-container">
@@ -1167,6 +1174,102 @@
 
       // Start observing the target div
       observer.observe(circleDiv);
+
+
+
+
+
+
+
+
+
+
+
+
+      const numberDisplayElement1 = document.getElementById("numberDisplay");
+const numberDisplayElement2 = document.getElementById("yearDisplay");
+const numberDisplayElement3 = document.getElementById("companyDisplay");
+
+let currentNumber1 = 1450;
+let currentNumber2 = 0;
+let currentNumber3 = 0;
+
+const targetNumber1 = 2022;
+const targetNumber2 = 70;
+const targetNumber3 = 13;
+
+function updateNumbers() {
+  if (currentNumber1 < targetNumber1) {
+    currentNumber1 = currentNumber1 + 8;
+    if (currentNumber1 >= targetNumber1) {
+      currentNumber1 = targetNumber1;
+    }
+    numberDisplayElement1.innerText = currentNumber1;
+  }
+  if (currentNumber2 < targetNumber2) {
+    currentNumber2++;
+    if (currentNumber2 >= targetNumber2) {
+      currentNumber2 = targetNumber2;
+    }
+    numberDisplayElement2.innerText = currentNumber2 + "+";
+  }
+  if (currentNumber3 < targetNumber3) {
+    currentNumber3 = currentNumber3 + 5;
+    if (currentNumber3 >= targetNumber3) {
+      currentNumber3 = targetNumber3;
+    }
+    numberDisplayElement3.innerText = currentNumber3 + "+";
+  }
+  if (currentNumber1 >= targetNumber1 && currentNumber2 >= targetNumber2 && currentNumber3 >= targetNumber3) {
+    clearInterval(intervalId); // Stop the interval if all targets are reached
+  }
+}
+
+const intervalId = setInterval(updateNumbers, 50);
+
+
+
+
+
+
+
+      // Create a new Intersection Observer
+      var observer = new IntersectionObserver(handleIntersect, options);
+
+      // Start observing the target div
+      observer.observe(circleDiv);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const divs = document.querySelectorAll(".we-deliver-main");
+
+        function hideElement(element) {
+          element.classList.remove("visible");
+          element.classList.add("hidden");
+        }
+
+        function showElement(element) {
+          element.classList.remove("hidden");
+          element.classList.add("visible");
+        }
+
+        function showNext() {
+          const currentIndex = Array.from(divs).findIndex((div) =>
+            div.classList.contains("visible")
+          );
+          const nextIndex = (currentIndex + 1) % divs.length;
+
+          hideElement(divs[currentIndex]);
+          showElement(divs[nextIndex]);
+        }
+
+        // Initially hide all but the first div
+        for (let i = 1; i < divs.length; i++) {
+          hideElement(divs[i]);
+        }
+
+        setInterval(showNext, 2000); // Change every 3 seconds
+      });
+
     </script>
   </body>
 </html>

@@ -147,106 +147,6 @@ body {
   line-height: 28px;
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.logos {
-  animation-play-state: running;
-}
-
-.logos {
-  overflow: hidden;
-  padding: 30px 0;
-  background: #1a1a1a;
-  white-space: nowrap;
-  position: relative;
-}
-
-.logos::before {
-  height: 75px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#1a1a1a),
-    to(rgba(255, 255, 255, 0))
-  );
-  position: absolute;
-  width: 45px;
-  z-index: 1;
-  border-radius: 0 50px 50px 0;
-}
-
-.logos::after {
-  height: 75px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#1a1a1a),
-    to(rgba(255, 255, 255, 0))
-  );
-  position: absolute;
-  width: 45px;
-  z-index: 1;
-  border-radius: 0 50px 50px 0;
-}
-
-.logos-slide {
-  display: inline-block;
-  animation: 25s slide infinite linear;
-}
-
-.egginno {
-  height: 80px;
-  padding-top: 20px;
-}
-
-.malgudi,
-.sukalpa-tech,
-.fourstar {
-  padding-top: 20px;
-  height: 84px;
-  width: 150px;
-}
-
-.greenway {
-  width: 200px;
-}
-
-.pmmf {
-  height: 84px;
-  width: 150px;
-}
-
-.consult {
-  height: 84px;
-  width: 150px;
-}
-
-.p-logos-container {
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  height: 240px;
-}
-
-.logos-slide svg {
-  margin: 0 40px;
-}
-
-.logos-slide img {
-  margin: 0 40px;
-}
-
 .p-shape-future.enhance {
   padding-bottom: 80px;
 }
@@ -2727,6 +2627,155 @@ span {
   cursor: pointer;
 }
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.p-logos {
+  animation-play-state: running;
+}
+
+.p-logos {
+  overflow: hidden;
+  padding: 30px 0;
+  background: #1a1a1a;
+  white-space: nowrap;
+  position: relative;
+}
+
+.p-logos::before {
+  height: 75px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#1a1a1a),
+    to(rgba(255, 255, 255, 0))
+  );
+  position: absolute;
+  width: 45px;
+  z-index: 1;
+  border-radius: 0 50px 50px 0;
+}
+.p-logos::after {
+  height: 75px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#1a1a1a),
+    to(rgba(255, 255, 255, 0))
+  );
+  position: absolute;
+  width: 45px;
+  z-index: 1;
+  border-radius: 0 50px 50px 0;
+}
+
+.p-logos-slide {
+  display: inline-block;
+  animation: 25s slide infinite linear;
+}
+
+.egginno {
+  height: 80px;
+  padding-top: 20px;
+}
+.malgudi,
+.sukalpa-tech,
+.fourstar {
+  padding-top: 20px;
+  height: 84px;
+  width: 150px;
+}
+.greenway {
+  width: 200px;
+}
+.pmmf {
+  height: 84px;
+  width: 150px;
+}
+.consult {
+  height: 84px;
+  width: 150px;
+}
+.p-logos-container {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 240px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.validator {
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+  align-self: stretch;
+}
+.validator-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.validator-content-number {
+  display: flex;
+  width: 91px;
+  height: 38px;
+  padding-right: 38px;
+  align-items: center;
+}
+.validator-content-number span {
+  color: var(--Cinnabar-600-primary, #ed1c24);
+  font-family: Lato;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.validator-text {
+  color: var(--Bunker-gray-500, #677890);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1300px) {
   .p-text-main {
     padding-left: 0;
@@ -2756,6 +2805,50 @@ span {
 
 /* For medium screens  */
 @media only screen and (max-width: 1200px) {
+
+  .validator {
+    display: flex;
+    padding: 8px 0px 48px 0px;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .validator-content {
+    width: 100%;
+  }
+
+  .validator-content-number span {
+    color: var(--Cinnabar-600-primary, #ed1c24);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .validator-text {
+    color: var(--Bunker-gray-500, #677890);
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .p-get-in-touch {
     padding-left: 30px;
     padding-right: 30px;
@@ -2793,7 +2886,10 @@ span {
     padding-left: 60px;
     padding-right: 60px;
   }
-
+  .p-logos-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
   .p-cards-container {
     padding-left: 90px;
     padding-right: 90px;

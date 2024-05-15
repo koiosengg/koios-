@@ -217,3 +217,13 @@ document.addEventListener("DOMContentLoaded", function () {
     updateIndicatorColor();
   });
 });
+
+
+
+
+
+
+
+
+
+

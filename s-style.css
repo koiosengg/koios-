@@ -1257,6 +1257,7 @@
 }
 .s-aboutus-text .yellow {
   color: #ffbf00;
+  font-size: 30px;
 }
 .s-aboutus-text span::first-letter {
   text-transform: capitalize;

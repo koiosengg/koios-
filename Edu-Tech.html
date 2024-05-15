@@ -677,10 +677,7 @@
             <div class="s-carousel-indicator"></div>
           </div>
           <p class="subpage-desc">
-            Lorem ipsum dolor sit amet consectetur. Tellus volutpat facilisi
-            massa a in nec. Leo convallis quam morbi tellus. Pharetra nunc nec
-            mattis velit sed varius ac quis. Leo convallis quam morbi tellus.
-            Pharetra nunc nec mattis velit sed varius ac quis.
+            Join our webinars led by seasoned trainers with 30+ years of corporate training experience in MNCs. Explore topics like electric vehicle design, ISO, EMS, and more, empowering you with industry-leading expertise.
           </p>
           <a href="./contact.html">
             <span>Contact Us</span>
@@ -706,13 +703,9 @@
         <div class="s-product-list-set-container">
           <div class="s-product-img-carousel">
             <div class="s-slider">
-              <img loading="lazy" src="./s-public/product-img.jpg" alt="" />
-              <img loading="lazy" src="./s-public/carousel-6.jpg" alt="" />
-              <img loading="lazy" src="./s-public/carousel-5.jpg" alt="" />
-              <img loading="lazy" src="./s-public/carousel-4.jpg" alt="" />
-              <img loading="lazy" src="./s-public/carousel-3.jpg" alt="" />
-              <img loading="lazy" src="./s-public/carousel-2.jpg" alt="" />
-              <img loading="lazy" src="./s-public/carousel-1.jpg" alt="" />
+              <img loading="lazy" src="./assets/seminar/seminar image 1.jpg" alt="seminar image 1" />
+              <img loading="lazy" src="./assets/seminar/seminar image 2.jpg" alt="seminar image 2" />
+              <img loading="lazy" src="./assets/seminar/seminar image 3.jpg" alt="seminar image 3" />
             </div>
             <div class="s-carousel-buttons s-next-img">
               <svg
@@ -745,10 +738,7 @@
             <div class="s-carousel-indicator"></div>
           </div>
           <p class="subpage-desc">
-            Lorem ipsum dolor sit amet consectetur. Tellus volutpat facilisi
-            massa a in nec. Leo convallis quam morbi tellus. Pharetra nunc nec
-            mattis velit sed varius ac quis. Leo convallis quam morbi tellus.
-            Pharetra nunc nec mattis velit sed varius ac quis.
+            Empower your students with hands-on seminars and workshops led by our seasoned trainers with over 30 years of corporate training experience in MNCs. Explore electric vehicle design, ISO, EMS, and more!
           </p>
           <a href="./contact.html">
             <span>Contact Us</span>
@@ -798,8 +788,15 @@
             </svg>
             <img loading="lazy" class="svg2" src="./assets/svgt.png" />
           </div>
-          <div id="changeText" class="text-container">
-            <span id="wholeLine">Come with a Question</span>
+          <div class="we-deliver">
+            <div class="we-deliver-text-container">
+              <div class="we-deliver-main visible">
+                <p>Come with a Question</p>
+              </div>
+              <div class="we-deliver-main">
+                <p>Leave with a Solution</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="p-side-button-container">
@@ -1132,6 +1129,57 @@
           updateIndicatorColor();
         });
       });
+
+
+
+
+      // Define handleIntersect function
+function handleIntersect(entries, observer) {
+  entries.forEach((entry) => {
+    // Your intersection handling logic here
+    console.log(entry);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const divs = document.querySelectorAll(".we-deliver-main");
+
+  if (divs.length > 0) {
+    // Create a new Intersection Observer
+    var observer = new IntersectionObserver(handleIntersect, options);
+
+    // Start observing the target div
+    observer.observe(circleDiv);
+  }
+
+  function hideElement(element) {
+    element.classList.remove("visible");
+    element.classList.add("hidden");
+  }
+
+  function showElement(element) {
+    element.classList.remove("hidden");
+    element.classList.add("visible");
+  }
+
+  function showNext() {
+    const currentIndex = Array.from(divs).findIndex((div) =>
+      div.classList.contains("visible")
+    );
+    const nextIndex = (currentIndex + 1) % divs.length;
+
+    hideElement(divs[currentIndex]);
+    showElement(divs[nextIndex]);
+  }
+
+  // Initially hide all but the first div
+  for (let i = 1; i < divs.length; i++) {
+    hideElement(divs[i]);
+  }
+
+  setInterval(showNext, 2000); // Change every 3 seconds
+});
+
     </script>
     <script src="./index.js"></script>
   </body>

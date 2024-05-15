@@ -6,7 +6,7 @@
     <title>Website Development</title>
     <meta
       name="description"
-      content="Transform Your Online Presence with Koios Website Development. From sleek designs to seamless functionality, our expert team crafts custom websites tailored to your brand. Explore our services now! See Details"
+      content="Develop your website with Koios Engineering Solutions. Specializing in responsive, static, and dynamic website development, we deliver tailored solutions to enhance your digital footprint. Explore our expertise today!"
     />
     <link rel="stylesheet" href="p-style.css" />
     <link rel="stylesheet" href="./s-style.css" />
@@ -617,8 +617,15 @@
             </svg>
             <img loading="lazy" class="svg2" src="./assets/svgt.png" />
           </div>
-          <div id="changeText" class="text-container">
-            <span id="wholeLine">Come with a Question</span>
+          <div class="we-deliver">
+            <div class="we-deliver-text-container">
+              <div class="we-deliver-main visible">
+                <p>Come with a Question</p>
+              </div>
+              <div class="we-deliver-main">
+                <p>Leave with a Solution</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="p-side-button-container">
@@ -874,6 +881,55 @@
         </div>
       </div>
     </div>
+    <script>
+      // Define handleIntersect function
+function handleIntersect(entries, observer) {
+  entries.forEach((entry) => {
+    // Your intersection handling logic here
+    console.log(entry);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const divs = document.querySelectorAll(".we-deliver-main");
+
+  if (divs.length > 0) {
+    // Create a new Intersection Observer
+    var observer = new IntersectionObserver(handleIntersect, options);
+
+    // Start observing the target div
+    observer.observe(circleDiv);
+  }
+
+  function hideElement(element) {
+    element.classList.remove("visible");
+    element.classList.add("hidden");
+  }
+
+  function showElement(element) {
+    element.classList.remove("hidden");
+    element.classList.add("visible");
+  }
+
+  function showNext() {
+    const currentIndex = Array.from(divs).findIndex((div) =>
+      div.classList.contains("visible")
+    );
+    const nextIndex = (currentIndex + 1) % divs.length;
+
+    hideElement(divs[currentIndex]);
+    showElement(divs[nextIndex]);
+  }
+
+  // Initially hide all but the first div
+  for (let i = 1; i < divs.length; i++) {
+    hideElement(divs[i]);
+  }
+
+  setInterval(showNext, 2000); // Change every 3 seconds
+});
+
+    </script>
     <script src="./index.js"></script>
   </body>
 </html>

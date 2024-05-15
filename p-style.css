@@ -2711,25 +2711,6 @@ span {
   height: 240px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .validator {
   display: flex;
   align-items: flex-start;
@@ -2767,15 +2748,6 @@ span {
   line-height: 28px;
 }
 
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1300px) {
   .p-text-main {
     padding-left: 0;
@@ -2805,7 +2777,6 @@ span {
 
 /* For medium screens  */
 @media only screen and (max-width: 1200px) {
-
   .validator {
     display: flex;
     padding: 8px 0px 48px 0px;
@@ -2834,20 +2805,6 @@ span {
     font-weight: 600;
     line-height: normal;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .p-get-in-touch {
     padding-left: 30px;
@@ -4224,6 +4181,28 @@ span {
     width: 100% !important;
   }
 
+  .we-deliver {
+    width: 335px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .we-deliver-main p {
+    width: 335px;
+    background: linear-gradient(
+      93deg,
+      #fff 8.57%,
+      rgba(255, 255, 255, 0.75) 95.46%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+  }
   /* Responsive footer */
   .p-footer {
     padding-left: 30px;

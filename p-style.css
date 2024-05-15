@@ -3120,6 +3120,9 @@ span {
     width: 100% !important;
   }
 
+  .s-aboutus-text .yellow {
+    font-size: 18px;
+  }
   .p-footer {
     padding-left: 90px;
     padding-right: 90px;
@@ -4220,7 +4223,11 @@ span {
     line-height: 24px;
     /* 150% */
   }
-
+  .s-aboutus-text span {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   /* Responsive footer */
   .p-footer {
     padding-left: 30px;

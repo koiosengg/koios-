@@ -217,3 +217,37 @@ document.addEventListener("DOMContentLoaded", function () {
     updateIndicatorColor();
   });
 });
+
+ //Footer Linkedin Toggle
+ function toggleLinks(elementId) {
+  var linksDiv = document.querySelector(elementId);
+  if (
+    linksDiv.style.display === "none" ||
+    linksDiv.style.display === ""
+  ) {
+    linksDiv.style.display = "flex";
+  } else {
+    linksDiv.style.display = "none";
+  }
+}
+
+document
+  .getElementById("toggleLink")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    toggleLinks("#desktop-content .p-linkedin-extended");
+  });
+
+document
+  .getElementById("dropdown-toggle")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    toggleLinks("#mobile-content .p-linkedin-extended");
+  });
+
+
+
+
+
+
+

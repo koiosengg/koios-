@@ -246,22 +246,18 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  border: 1px solid;
-  border-image: linear-gradient(
-      to bottom,
-      #ffbf00 0%,
-      #ffffff 25.08%,
-      #0d9bbf 51.45%,
-      #ffffff 84.24%,
-      #ffbf00 100%
-    )
-    1;
+  background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+    linear-gradient(
+        to bottom,
+        #ffbf00 0%,
+        #ffffff 25.08%,
+        #0d9bbf 51.45%,
+        #ffffff 84.24%,
+        #ffbf00 100%
+      )
+      border-box;
   border-radius: 10px;
-  /* Adjust the value as needed */
-  -webkit-mask-composite: xor;
-  /*5'*/
-  mask-composite: exclude;
-  /*5*/
+  border: 1px solid transparent;
 }
 
 .p-contact-form input {
@@ -2407,7 +2403,17 @@ span {
 .p-hover.edutech:hover {
   color: #ffffff;
 }
-
+.p-submit-button {
+  background-color: #1a1a1a !important;
+  background: #1a1a1a !important;
+  color: #ffbf00 !important;
+  text-align: center !important;
+  font-family: Quicksand !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
 .p-footer {
   padding-top: 40px;
   padding-left: 160px;
@@ -2422,12 +2428,8 @@ span {
   align-items: center;
 }
 
-#content {
-  display: none;
-}
-
 .p-linkedin-extended a {
-  color: #98a2b3;
+  color: #ffffff;
   text-decoration: none;
   font-family: Quicksand;
   font-size: 16px;
@@ -2440,7 +2442,7 @@ span {
 }
 
 .p-linkedin-extended {
-  display: flex;
+  display: none;
   gap: 24px;
   flex-direction: row;
   padding-top: 32px;
@@ -4227,6 +4229,26 @@ span {
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .p-linkedin-extended {
+    display: none;
+  }
+  .p-linkedin-extended.mobile {
+    justify-content: center;
+    padding-bottom: 16px;
+    padding-top: 0;
+  }
+  .p-linkedin-extended.mobile a {
+    color: #ffffff;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+  }
+  .p-linkedin-extended.mobile a:hover {
+    color: #ffbf00;
   }
   /* Responsive footer */
   .p-footer {

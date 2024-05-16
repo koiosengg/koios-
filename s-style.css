@@ -668,6 +668,7 @@
 .s-product-img-carousel {
   display: flex;
   width: 608px;
+  height: 608px;
   overflow: hidden;
   position: relative;
 }
@@ -740,7 +741,6 @@
 }
 
 .s-product-list-set-container p {
-  width: 608px;
   flex-shrink: 0;
   font-family: Quicksand;
   font-size: 18px;

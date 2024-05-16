@@ -4356,7 +4356,9 @@ span {
     padding-top: 8px;
     justify-content: center;
   }
-
+  .p-policy-tos {
+    width: 240px;
+  }
   .p-policy-tos p {
     color: var(--gray---for-text-400, #98a2b3);
     font-family: Quicksand;

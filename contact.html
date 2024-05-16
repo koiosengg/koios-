@@ -553,10 +553,7 @@
         <div class="p-talk-to-us">
           Talk to us and we will help you reach out as soon as possible.
         </div>
-        <form
-        action="https://getform.io/f/b9c13577-b220-4061-93c4-92854778546f"
-          method="post"
-        >
+        <form action="https://formspree.io/f/xrgndjlp" method="post">
           <div class="p-form-logo">
             <div class="p-contact-form">
               <div class="p-fullname">
@@ -571,7 +568,9 @@
                 />
               </div>
               <div class="p-email">
-                <label>Email address<span style="color: #ffbf00">*</span></label>
+                <label
+                  >Email address<span style="color: #ffbf00">*</span></label
+                >
                 <input
                   class="p-input"
                   type="text"
@@ -582,20 +581,29 @@
                 />
               </div>
               <div class="p-number">
-                <label>Mobile number<span style="color: #ffbf00">*</span></label>
+                <label
+                  >Mobile number<span style="color: #ffbf00">*</span></label
+                >
                 <input
                   class="p-input"
-                  type="number"
-                  placeholder="+91 99999 99999"
+                  type="tel"
+                  placeholder="99999 99999"
                   required
                   name="number"
+                  maxlength="10"
                 />
               </div>
               <div class="p-how-can-we-help">
                 <label>How can we help you?</label>
                 <textarea class="p-textarea" placeholder="Type Here"></textarea>
               </div>
-              <input type="submit" class="p-submit-button" value="Submit" required name="message"/>
+              <input
+                type="submit"
+                class="p-submit-button"
+                value="Submit"
+                required
+                name="message"
+              />
             </div>
             <div class="p-moving-logo">
               <div class="p-explore-services">
@@ -892,8 +900,8 @@
       </div>
     </div>
 
-      <script>
-         //Footer Linkedin Toggle
+    <script>
+      //Footer Linkedin Toggle
       function toggleLinks(elementId) {
         var linksDiv = document.querySelector(elementId);
         if (
@@ -919,7 +927,7 @@
           event.preventDefault();
           toggleLinks("#mobile-content .p-linkedin-extended");
         });
-      </script>
+    </script>
     <script src="./index.js"></script>
   </body>
 </html>

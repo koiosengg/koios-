@@ -311,7 +311,9 @@ body {
   border-radius: 4px;
   border: 2px solid var(--Woodsmoke----BG-600, #5d5d5d);
   background-color: transparent;
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Quicksand;
+  font-size: 16px;
 }
 
 .p-textarea::placeholder {

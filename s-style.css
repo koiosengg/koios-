@@ -402,7 +402,7 @@
       transparent 100%
     );
     border-image-slice: 1;
-    box-shadow: 0px -1px 40px 0px #ffbf0087;
+    box-shadow: 0px -1px 40px 0px #ffbf004a;
     border-bottom: 1px solid #ffbf00;
   }
 }

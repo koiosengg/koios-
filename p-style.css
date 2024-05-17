@@ -2416,6 +2416,15 @@ span {
   font-weight: 500 !important;
   line-height: normal !important;
 }
+.contain {
+  object-fit: contain !important;
+}
+.none {
+  object-fit: none !important;
+}
+.cover {
+  object-fit: cover !important;
+}
 .p-footer {
   padding-top: 40px;
   padding-left: 160px;

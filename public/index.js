@@ -218,13 +218,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
- //Footer Linkedin Toggle
- function toggleLinks(elementId) {
+//Footer Linkedin Toggle
+function toggleLinks(elementId) {
   var linksDiv = document.querySelector(elementId);
-  if (
-    linksDiv.style.display === "none" ||
-    linksDiv.style.display === ""
-  ) {
+  if (linksDiv.style.display === "none" || linksDiv.style.display === "") {
     linksDiv.style.display = "flex";
   } else {
     linksDiv.style.display = "none";
@@ -244,10 +241,3 @@ document
     event.preventDefault();
     toggleLinks("#mobile-content .p-linkedin-extended");
   });
-
-
-
-
-
-
-

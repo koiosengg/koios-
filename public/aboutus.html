@@ -8,31 +8,7 @@
       name="description"
       content="Welcome to Koios Engineering Solutions Pvt Ltd, your trusted partner in innovation. Specializing in the design and development of automobile and mechanical parts, as well as websites and apps, we are dedicated to delivering cutting-edge solutions that drive progress and excellence. With a commitment to quality and creativity, we empower businesses to thrive in the ever-evolving digital landscape. Learn more about our journey and expertise today"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Allerta+Stencil&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="./s-public/black no name.svg" />
+    <link rel="icon" type="image/x-icon" href="./assets/black no name.svg" />
     <link rel="stylesheet" href="./s-style.css" />
     <link rel="stylesheet" href="./p-style.css" />
   </head>
@@ -161,7 +137,7 @@
           <div class="s-dropdown">
             <div class="s-dropdown-container">
               <div class="s-dropdown-heading">
-                <img loading="lazy" src="./s-public/1.png" alt="" />
+                <img loading="lazy" src="./assets/1.png" alt="" />
                 <a
                   href="./Engineering-Solutions.html"
                   onclick="this.style.color='#0d9bbf';"
@@ -247,7 +223,7 @@
           <div class="s-dropdown">
             <div class="s-dropdown-container">
               <div class="s-dropdown-heading">
-                <img loading="lazy" src="./s-public/software.png" alt="" />
+                <img loading="lazy" src="./assets/software.png" alt="" />
                 <a
                   href="./Software-Solutions.html"
                   onclick="this.style.color='#ffbf00';"
@@ -303,7 +279,7 @@
           <div class="s-dropdown">
             <div class="s-dropdown-container">
               <div class="s-dropdown-heading">
-                <img loading="lazy" src="./s-public/edu.png" alt="" />
+                <img loading="lazy" src="./assets/edu.png" alt="" />
                 <a href="./Edu-Tech.html">Edu-Tech</a>
               </div>
               <div class="s-single-options">
@@ -391,7 +367,7 @@
           </div>
           <div class="s-mobile-nav-list">
             <div class="s-mobile-nav-list-logo">
-              <img loading="lazy" src="./s-public/1.png" alt="" />
+              <img loading="lazy" src="./assets/1.png" alt="" />
             </div>
             <div class="s-mobile-nav-list-container">
               <div class="s-mobile-nav-list-item">
@@ -476,7 +452,7 @@
           </div>
           <div class="s-mobile-nav-list">
             <div class="s-mobile-nav-list-logo">
-              <img loading="lazy" src="./s-public/software.png" alt="" />
+              <img loading="lazy" src="./assets/software.png" alt="" />
             </div>
             <div class="s-mobile-nav-list-container">
               <div class="s-mobile-nav-list-item">
@@ -540,7 +516,7 @@
           </div>
           <div class="s-mobile-nav-list">
             <div class="s-mobile-nav-list-logo">
-              <img loading="lazy" src="./s-public/edu.png" alt="" />
+              <img loading="lazy" src="./assets/edu.png" alt="" />
             </div>
             <div class="s-mobile-nav-list-container">
               <div class="s-mobile-nav-list-item">
@@ -574,7 +550,7 @@
 
     <div class="s-aboutus-hero">
       <div class="s-aboutus-bg">
-        <img loading="lazy" src="./s-public/aboutus-bg.png" alt="" />
+        <img loading="lazy" src="./assets/aboutus-bg.png" alt="" />
       </div>
       <div class="s-aboutus-logo">
         <svg
@@ -734,7 +710,7 @@
           development solutions.
         </p>
       </div>
-      <audio id="s-koios-audio" src="./s-public/koios.mp3"></audio>
+      <audio id="s-koios-audio" src="./assets/koios.mp3"></audio>
     </div>
 
     <div class="s-vision">
@@ -1354,7 +1330,33 @@
 
         setInterval(showNext, 2000); // Change every 3 seconds
       });
+
+      //footer links toggle
+      function toggleLinks(elementId) {
+        var linksDiv = document.querySelector(elementId);
+        if (
+          linksDiv.style.display === "none" ||
+          linksDiv.style.display === ""
+        ) {
+          linksDiv.style.display = "flex";
+        } else {
+          linksDiv.style.display = "none";
+        }
+      }
+
+      document
+        .getElementById("toggleLink")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          toggleLinks("#desktop-content .p-linkedin-extended");
+        });
+
+      document
+        .getElementById("dropdown-toggle")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          toggleLinks("#mobile-content .p-linkedin-extended");
+        });
     </script>
-    <script src="./index.js"></script>
   </body>
 </html>

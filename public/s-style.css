@@ -889,7 +889,7 @@
 }
 
 .s-carousel-set img {
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .s-carousel-set-bg {

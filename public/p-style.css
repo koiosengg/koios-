@@ -3350,20 +3350,20 @@ span {
   }
 
   .p-benefits-svg-container.whyus {
-    height: 52px;
-    width: 52px;
+    height: 58px;
+    width: 58px;
     padding: 8px;
   }
 
   .p-benefits-svg-second-container.whyus {
-    height: 36px;
-    width: 36px;
+    height: 43px;
+    width: 43px;
     padding: 8px;
   }
 
   .p-benefits-svg-second-container.whyus svg {
-    height: 20px;
-    width: 20px;
+    height: 27px;
+    width: 39px;
   }
 
   .p-hover-text-container {
@@ -3759,8 +3759,8 @@ span {
   }
 
   .p-svg-first-container {
-    width: 28px;
-    height: 28px;
+    width: 48px;
+    height: 50px;
     border-radius: 70px;
     background: linear-gradient(
       180deg,
@@ -3781,16 +3781,16 @@ span {
       rgba(255, 255, 255, 0) 85.46%
     );
     position: absolute;
-    width: 22px;
-    height: 22px;
+    width: 36px;
+    height: 36px;
     align-items: center;
     justify-content: center;
     display: flex;
   }
 
   .p-svg-secong-container svg {
-    width: 16px;
-    height: 15.469px;
+    width: 30px;
+    height: 46px;
   }
 
   .p-creators-content {

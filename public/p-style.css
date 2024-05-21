@@ -3317,7 +3317,7 @@ span {
     padding: 20px 16px;
     align-items: flex-start;
     gap: 8px;
-    height: 203px;
+    height: auto;
   }
 
   .p-cards-container {
@@ -3745,7 +3745,7 @@ span {
     text-align: center;
     align-items: center;
     width: 160px;
-    height: 90px;
+    height: 112px;
   }
 
   .p-mobile-icon-text p {
@@ -3760,8 +3760,8 @@ span {
   }
 
   .p-svg-first-container {
-    width: 48px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 70px;
     background: linear-gradient(
       180deg,
@@ -3782,16 +3782,16 @@ span {
       rgba(255, 255, 255, 0) 85.46%
     );
     position: absolute;
-    width: 36px;
-    height: 36px;
+    width: 55px;
+    height: 55px;
     align-items: center;
     justify-content: center;
     display: flex;
   }
 
   .p-svg-secong-container svg {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
 
   .p-creators-content {

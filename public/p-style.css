@@ -3137,6 +3137,14 @@ span {
   .s-aboutus-text .yellow {
     font-size: 18px;
   }
+  .p-privacy-policy-main h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .p-privacy-policy-main p {
+    line-height: 25px;
+    font-size: 15px;
+  }
   .p-footer {
     padding-left: 90px;
     padding-right: 90px;

@@ -711,10 +711,10 @@
   height: 2px;
   background: #c8c8c8;
 }
-.s-carousel-indicator-container.yellow{
+.s-carousel-indicator-container.yellow {
   background: #ffbf00;
 }
-.s-carousel-indicator-container.white{
+.s-carousel-indicator-container.white {
   background: #ffffff;
 }
 .s-carousel-buttons {
@@ -936,16 +936,16 @@
 
 .s-position-1 img,
 .s-position1 img {
-  width: 347px;
-  height: 440px;
+  width: 440px;
+  height: 347px;
   flex-shrink: 0;
   border-radius: 12px;
   filter: blur(2.5px);
 }
 
 .s-position0 img {
-  width: 469px;
-  height: 578px;
+  width: 600px;
+  height: 469px;
   border-radius: 15px;
   border: 2px solid #292929;
   box-shadow: 0px 441px 123px 0px rgba(0, 0, 0, 0),
@@ -2228,13 +2228,13 @@
   }
 
   .s-position0 {
-    width: 180px;
+    width: 280px;
     height: 200px;
     border-radius: 15px;
   }
 
   .s-position0 img {
-    width: 180px;
+    width: 280px;
     height: 200px;
   }
 

@@ -2221,7 +2221,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
+  .gallery {
+    width: 8px;
+    height: 10px;
+  }
   .s-carousel {
     width: 375px;
     height: 200px;

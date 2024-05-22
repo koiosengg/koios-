@@ -3140,10 +3140,22 @@ span {
   .p-privacy-policy-main h1 {
     font-size: 25px;
     line-height: 30px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .p-privacy-policy-main p {
     line-height: 25px;
     font-size: 15px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .p-privacy-policy-main h2 {
+    width: 100%;
+    line-height: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .p-footer {
     padding-left: 90px;
@@ -4270,6 +4282,7 @@ span {
   .p-linkedin-extended.mobile a:hover {
     color: #ffbf00;
   }
+
   /* Responsive footer */
   .p-footer {
     padding-left: 30px;

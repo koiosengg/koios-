@@ -134,7 +134,11 @@
           <div class="s-dropdown">
             <div class="s-dropdown-container">
               <div class="s-dropdown-heading">
-                <img loading="lazy" src="./assets/1.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="./assets/1.png"
+                  alt="Engineering logo"
+                />
                 <a
                   href="./Engineering-Solutions.html"
                   onclick="this.style.color='#0d9bbf';"
@@ -220,7 +224,11 @@
           <div class="s-dropdown">
             <div class="s-dropdown-container">
               <div class="s-dropdown-heading">
-                <img loading="lazy" src="./assets/software.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="./assets/1.png"
+                  alt="Engineering logo"
+                />
                 <a
                   href="./Software-Solutions.html"
                   onclick="this.style.color='#ffbf00';"
@@ -276,7 +284,7 @@
           <div class="s-dropdown">
             <div class="s-dropdown-container">
               <div class="s-dropdown-heading">
-                <img loading="lazy" src="./assets/edu.png" alt="" />
+                <img loading="lazy" src="./assets/edu.png" alt="edutech logo" />
                 <a href="./Edu-Tech.html">Edu-Tech</a>
               </div>
               <div class="s-single-options">
@@ -364,7 +372,7 @@
           </div>
           <div class="s-mobile-nav-list">
             <div class="s-mobile-nav-list-logo">
-              <img loading="lazy" src="./assets/1.png" alt="" />
+              <img loading="lazy" src="./assets/1.png" alt="Engineering logo" />
             </div>
             <div class="s-mobile-nav-list-container">
               <div class="s-mobile-nav-list-item">
@@ -449,7 +457,7 @@
           </div>
           <div class="s-mobile-nav-list">
             <div class="s-mobile-nav-list-logo">
-              <img loading="lazy" src="./assets/software.png" alt="" />
+              <img loading="lazy" src="./assets/1.png" alt="Engineering logo" />
             </div>
             <div class="s-mobile-nav-list-container">
               <div class="s-mobile-nav-list-item">
@@ -513,7 +521,7 @@
           </div>
           <div class="s-mobile-nav-list">
             <div class="s-mobile-nav-list-logo">
-              <img loading="lazy" src="./assets/edu.png" alt="" />
+              <img loading="lazy" src="./assets/edu.png" alt="edutech logo" />
             </div>
             <div class="s-mobile-nav-list-container">
               <div class="s-mobile-nav-list-item">
@@ -811,7 +819,12 @@
     <div class="p-footer-container">
       <div class="p-footer">
         <div class="p-koios">
-          <img loading="lazy" src="./assets/logo1.svg" style="margin: 0px" />
+          <img
+            loading="lazy"
+            src="./assets/logos/koios logo.svg"
+            style="margin: 0px"
+            alt="koios logo svg"
+          />
           <h1>Koios Engineering Solutions</h1>
         </div>
         <div class="p-rights-reserved mobile">© 2023 All rights reserved.</div>
@@ -917,7 +930,7 @@
                 src="./assets/location svg.png"
                 height="21px"
                 width="21px"
-                alt=""
+                alt="location svg"
               />
               <p>
                 No.315/64, Mallasandra village, Thalaghattapura Post,
@@ -1027,8 +1040,70 @@
         </div>
       </div>
     </div>
-    <script src="./index.js"></script>
+
     <script>
+      //Mobile Navbar
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileNavButton = document.querySelector(".s-mobile-nav-button");
+        const mobileNavbar = document.querySelector(".s-mobile-navbar");
+        const mobileNavbarCancelButton = document.querySelector(
+          ".s-mobile-navbar-cancel-button"
+        );
+
+        mobileNavButton.addEventListener("click", function () {
+          mobileNavbar.style.display =
+            mobileNavbar.style.display === "flex" ? "none" : "flex";
+        });
+        mobileNavbarCancelButton.addEventListener("click", function () {
+          mobileNavbar.style.display = "none";
+        });
+
+        var headings = document.querySelectorAll(".s-mobile-navlink-heading");
+        headings.forEach(function (heading) {
+          heading.addEventListener("click", function () {
+            var clickedNavList = this.nextElementSibling;
+            var isAlreadyVisible =
+              clickedNavList.classList.contains("s-visible");
+            var allNavLists = document.querySelectorAll(
+              ".s-mobile-nav-list.s-visible"
+            );
+            allNavLists.forEach(function (navList) {
+              if (navList !== clickedNavList) {
+                navList.classList.remove("s-visible");
+                var previousHeading = navList.previousElementSibling;
+                var headingText = previousHeading.querySelector(".heading");
+                var iconContainer = previousHeading.querySelector(
+                  ".s-mobile-navlink-heading-icon"
+                );
+                headingText.style.color = "";
+                iconContainer.classList.remove("s-rotate");
+                var svgIcon = iconContainer.querySelector("svg path");
+                svgIcon.style.fill = "";
+              }
+            });
+            clickedNavList.classList.toggle("s-visible");
+            var headingText = this.querySelector(".heading");
+            var iconContainer = this.querySelector(
+              ".s-mobile-navlink-heading-icon"
+            );
+            var svgIcon = iconContainer.querySelector("svg path");
+            if (clickedNavList.classList.contains("s-visible")) {
+              headingText.style.color = "#FFBF00";
+              iconContainer.classList.add("s-rotate");
+              svgIcon.style.fill = "#FFBF00";
+            } else {
+              headingText.style.color = "";
+              iconContainer.classList.remove("s-rotate");
+              svgIcon.style.fill = "";
+            }
+            if (isAlreadyVisible) {
+              headingText.style.color = "";
+              iconContainer.classList.remove("s-rotate");
+              svgIcon.style.fill = "";
+            }
+          });
+        });
+      });
       function openFileDialog() {
         // Create an input element
         var input = document.createElement("input");

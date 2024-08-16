@@ -603,20 +603,20 @@
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/vehical component manufacturing/vehical_componet_side_view.png"
-                  alt="vehical componet side view"
+                  src="./assets/vehical component manufacturing/Koios Engineering Solutions vehical_componet_side_view.png"
+                  alt="Koios Engineering Solutions render vehical componet side view"
                 />
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/vehical component manufacturing/vehicle_component_front.png"
-                  alt="vehicle component front"
+                  src="./assets/vehical component manufacturing/Koios Engineering Solutions vehicle_component_front.png"
+                  alt="Koios Engineering Solutions render vehicle component front"
                 />
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/vehical component manufacturing/vehicle_component_right.png"
-                  alt="vehicle component right"
+                  src="./assets/vehical component manufacturing/Koios Engineering Solutions vehicle_component_right.png"
+                  alt="Koios Engineering Solutions render vehicle component right"
                 />
               </div>
               <div class="s-carousel-buttons s-next-img">
@@ -672,38 +672,38 @@
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/vd/E bike Chassis/390_adv_Chassis_front.png"
-                  alt="390 adv Chassis front"
+                  src="./assets/vd/E bike Chassis/Koios Engineering Solutions 390_adv_Chassis_front.png"
+                  alt="Koios Engineering Solutions render 390 adv Chassis front"
                 />
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/vd/E bike Chassis/390_adv_Chassis_img1.png"
-                  alt="390 adv Chassis"
+                  src="./assets/vd/E bike Chassis/Koios Engineering Solutions 390_adv_Chassis_img1.png"
+                  alt="Koios Engineering Solutions render 390 adv Chassis"
                 />
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/vd/E bike Chassis/MOPED_REF.png"
-                  alt="MOPED image"
+                  src="./assets/vd/E bike Chassis/Koios Engineering Solutions MOPED_REF.png"
+                  alt="Koios Engineering Solutions render MOPED image"
                 />
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/vd/E bike Chassis/MOPED_REF_side.png"
-                  alt="MOPED image side view"
+                  src="./assets/vd/E bike Chassis/Koios Engineering Solutions MOPED_REF_side.png"
+                  alt="Koios Engineering Solutions render MOPED image side view"
                 />
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/vd/L3 Vehicle/Chassis_Base_green.png"
-                  alt="Chassis Base green"
+                  src="./assets/vd/L3 Vehicle/Koios Engineering Solutions Chassis_Base_green.png"
+                  alt="Koios Engineering Solutions render Chassis Base green"
                 />
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/vd/L5 Vehicle/Chassis_cage.png"
-                  alt="Chassis cage"
+                  src="./assets/vd/L5 Vehicle/Koios Engineering Solutions Chassis_cage.png"
+                  alt="Koios Engineering Solutions render Chassis cage"
                 />
               </div>
               <div class="s-carousel-buttons s-next-img">
@@ -755,21 +755,21 @@
             <div class="s-product-img-carousel">
               <div class="s-slider">
                 <img
-                  class="contain"
+                  class="cover"
                   loading="lazy"
-                  src="./assets/vd/E Gokart/Assemblage_kart_enfant.png"
-                  alt="Assemblage kart enfant"
+                  src="./assets/vd/E Gokart/Koios Engineering Solutions Assemblage_kart_enfant.png"
+                  alt="Koios Engineering Solutions render Assemblage kart enfant"
                 />
                 <img
-                  class="contain"
+                  class="cover"
                   loading="lazy"
-                  src="./assets/vd/E Gokart/Assemblage_kart_enfant_side.png"
-                  alt="Assemblage kart enfant side"
+                  src="./assets/vd/E Gokart/Koios Engineering Solutions Assemblage_kart_enfant_side.png"
+                  alt="Koios Engineering Solutions render Assemblage kart enfant side"
                 />
                 <img
                   loading="lazy"
-                  src="./assets/vd/E Gokart/Dune_buggy.png"
-                  alt="Dune_buggy"
+                  src="./assets/vd/E Gokart/Koios Engineering Solutions Dune_buggy.png"
+                  alt="Koios Engineering Solutions render Dune_buggy"
                 />
               </div>
               <div class="s-carousel-buttons s-next-img">
@@ -821,16 +821,16 @@
             <div class="s-product-img-carousel">
               <div class="s-slider">
                 <img
-                  class="none"
+                  class="cover"
                   loading="lazy"
-                  src="./assets/vd/Tricycle/Tricycle_v3_front.png"
-                  alt="Tricycle v3 front"
+                  src="./assets/vd/Tricycle/Koios Engineering Solutions Tricycle_v3_front.png"
+                  alt="Koios Engineering Solutions render Tricycle v3 front"
                 />
                 <img
-                  class="none"
+                  class="cover"
                   loading="lazy"
-                  src="./assets/vd/Tricycle/Tricycle_v3_side.png"
-                  alt="Tricycle v3 side"
+                  src="./assets/vd/Tricycle/Koios Engineering Solutions Tricycle_v3_side.png"
+                  alt="Koios Engineering Solutions render Tricycle v3 side"
                 />
               </div>
               <div class="s-carousel-buttons s-next-img">
@@ -1198,6 +1198,78 @@
       </div>
     </div>
     <script>
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const sliders = document.querySelectorAll(".s-product-img-carousel");
+
+    sliders.forEach(function (slider) {
+      const nextBtn = slider.querySelector(".s-next-img");
+      const prevBtn = slider.querySelector(".s-previous-img");
+      const sliderContent = slider.querySelector(".s-slider");
+      const indicator = slider.querySelector(".s-carousel-indicator");
+      const slides = slider.querySelectorAll(".s-slider img");
+      const totalSlides = slides.length;
+      const sliderWidth = sliderContent.getBoundingClientRect().width;
+      let counter = 0;
+
+      function updateIndicatorColor() {
+        const scrollProgress = ((counter + 1) / totalSlides) * 100;
+        indicator.innerHTML = "";
+        for (let i = 0; i < totalSlides; i++) {
+          const indicatorDiv = document.createElement("div");
+          indicatorDiv.classList.add("s-carousel-indicator-container");
+          indicator.appendChild(indicatorDiv);
+        }
+        const indicatorDivs = indicator.querySelectorAll(
+          ".s-carousel-indicator-container"
+        );
+        indicatorDivs.forEach((div, index) => {
+          if (index === counter) {
+            div.style.background = "#01cfdc";
+          } else {
+            div.style.background = "#c8c8c8";
+          }
+        });
+      }
+
+      function updateSlider() {
+        sliderContent.style.transform = `translateX(-${counter * sliderWidth
+          }px)`;
+
+        if (counter === 0) {
+          prevBtn.classList.add("disabled");
+        } else {
+          prevBtn.classList.remove("disabled");
+        }
+
+        if (counter === totalSlides - 1) {
+          nextBtn.classList.add("disabled");
+        } else {
+          nextBtn.classList.remove("disabled");
+        }
+
+        updateIndicatorColor();
+      }
+
+      nextBtn.addEventListener("click", function () {
+        if (counter < totalSlides - 1) {
+          counter++;
+          updateSlider();
+        }
+      });
+
+      prevBtn.addEventListener("click", function () {
+        if (counter > 0) {
+          counter--;
+          updateSlider();
+        }
+      });
+
+      updateIndicatorColor();
+    });
+  });
+
       // Define handleIntersect function
       function handleIntersect(entries, observer) {
         entries.forEach((entry) => {
@@ -1244,6 +1316,7 @@
 
         setInterval(showNext, 2000); // Change every 3 seconds
       });
+
     </script>
     <script src="./index.js"></script>
   </body>

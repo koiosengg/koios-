@@ -602,14 +602,14 @@
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/Sprocket_adopter.png"
-                  alt="Sprocket_adopter"
+                  src="./assets/Koios Engineering Solutions Sprocket_adopter.png"
+                  alt="Koios Engineering Solutions render Sprocket_adopter"
                 />
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/vrae/Passenger_vehicle_right.png"
-                  alt="Passenger_vehicle_righ"
+                  src="./assets/vrae/Koios Engineering Solutions Passenger_vehicle_right.png"
+                  alt="Koios Engineering Solutions render Passenger_vehicle_righ"
                 />
               </div>
               <div class="s-carousel-buttons s-next-img">
@@ -667,7 +667,7 @@
                 <img
                   loading="lazy"
                   class="contain"
-                  src="./assets/metal fab/c.webp"
+                  src="./assets/metal fab/Koios Engineering Solutions metal fab.webp"
                   alt="metal Fabrication"
                 />
               </div>
@@ -726,14 +726,14 @@
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/Sprocket_adopter.png"
-                  alt="Sprocket_adopter"
+                  src="./assets/Koios Engineering Solutions Sprocket_adopter.png"
+                  alt="Koios Engineering Solutions render Sprocket_adopter"
                 />
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/vrae/Passenger_vehicle_right.png"
-                  alt="Passenger_vehicle_right"
+                  src="./assets/vrae/Koios Engineering Solutions Passenger_vehicle_right.png"
+                  alt="Koios Engineering Solutions render Passenger_vehicle_right"
                 />
               </div>
               <div class="s-carousel-buttons s-next-img">
@@ -791,14 +791,14 @@
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/special purpose machine/Special_Purpose_Machine_rear.png"
-                  alt="Special_Purpose_Machine_rear"
+                  src="./assets/special purpose machine/Koios Engineering Solutions Special_Purpose_Machine_rear.png"
+                  alt="Koios Engineering Solutions render Special_Purpose_Machine_rear"
                 />
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/special purpose machine/Special_Purpose_Machine_front.png"
-                  alt="Special_Purpose_Machine_front"
+                  src="./assets/special purpose machine/Koios Engineering Solutions Special_Purpose_Machine_front.png"
+                  alt="Koios Engineering Solutions render Special_Purpose_Machine_front"
                 />
               </div>
               <div class="s-carousel-buttons s-next-img">
@@ -856,14 +856,14 @@
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/Sprocket_adopter.png"
-                  alt="Sprocket_adopter"
+                  src="./assets/Koios Engineering Solutions Sprocket_adopter.png"
+                  alt="Koios Engineering Solutions render Sprocket_adopter"
                 />
                 <img
                   class="contain"
                   loading="lazy"
-                  src="./assets/vrae/Passenger_vehicle_img.png"
-                  alt="Passenger_vehicle_right"
+                  src="./assets/vrae/Koios Engineering Solutions Passenger_vehicle_img.png"
+                  alt="Koios Engineering Solutions render Passenger_vehicle_right"
                 />
               </div>
               <div class="s-carousel-buttons s-next-img">
@@ -1283,51 +1283,7 @@
 
       //Image carousel
 
-      window.addEventListener("DOMContentLoaded", function () {
-        const carouselSets = document.querySelectorAll(".s-carousel-set");
-        const carouselText = document.querySelector(
-          ".s-carousel-text-container"
-        );
-        const textElements = carouselText.querySelectorAll("p");
-        const positions = [
-          "s-position2",
-          "s-position1",
-          "s-position0",
-          "s-position-1",
-          "s-position-2",
-        ];
-        let currentIndex = 0;
-
-        if (carouselSets.length > 5) {
-          const diff = carouselSets.length - 5;
-          for (let i = 1; i <= diff; i++) {
-            positions.push("s-not-active");
-          }
-        }
-
-        function shiftPositionClasses() {
-          const newPositionIndex = currentIndex % positions.length;
-
-          carouselSets.forEach(function (set, index) {
-            const newPosition = (newPositionIndex + index) % positions.length;
-            set.className = "s-carousel-set " + positions[newPosition];
-          });
-
-          // Hide all text elements
-          textElements.forEach(function (text) {
-            text.style.display = "none";
-          });
-
-          // Show the corresponding text element
-          textElements[newPositionIndex].style.display = "block";
-
-          currentIndex++;
-
-          setTimeout(shiftPositionClasses, 4000); // 4 seconds delay
-        }
-
-        shiftPositionClasses();
-      });
+     
 
       document.addEventListener("DOMContentLoaded", function () {
         const sliders = document.querySelectorAll(".s-product-img-carousel");

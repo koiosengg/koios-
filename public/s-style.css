@@ -897,6 +897,10 @@
   object-fit: fill;
 }
 
+.mechanicalGallery .s-carousel-set img{
+  object-fit: cover;
+}
+
 .s-carousel-set-bg {
   position: absolute;
   flex-shrink: 0;
@@ -952,6 +956,21 @@
     0px 282px 113px 0px rgba(0, 0, 0, 0.01),
     0px 159px 95px 0px rgba(0, 0, 0, 0.05),
     0px 70px 70px 0px rgba(0, 0, 0, 0.09), 0px 18px 39px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mechanicalGallery .s-position-2 img, .mechanicalGallery .s-position2 img{
+  width: 289px;
+  height: 295px;
+}
+
+.mechanicalGallery .s-position-1 img , .mechanicalGallery .s-position1 img{
+  width: 357px;
+  height: 398px;
+}
+
+.mechanicalGallery .s-position0 img{
+  width: 428px;
+  height: 522px;
 }
 
 .s-position-2 {

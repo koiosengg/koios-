@@ -600,36 +600,15 @@
           <div class="s-product-list-set-container">
             <div class="s-product-img-carousel">
               <div class="s-slider">
-                <img
-                  class="contain"
-                  loading="lazy"
-                  src="./assets/go kart/Koios Engineering Solutions yellow_e-go_kart.webp"
-                  alt="Koios Engineering Solutions render yellow e-gokart"
-                />
-                <img
-                  class="contain"
-                  loading="lazy"
-                  src="./assets/go kart/Koios Engineering Solutions Exloded_View-go-kart.webp"
-                  alt="Koios Engineering Solutions render Exloded View gokart"
-                />
-                <img
-                  class="contain"
-                  loading="lazy"
-                  src="./assets/go kart/Koios Engineering Solutions GOKART_ASSEMBLY_Img_1.webp"
-                  alt="Koios Engineering Solutions render GOKART ASSEMBLY"
-                />
-                <img
-                  class="contain"
-                  loading="lazy"
-                  src="./assets/go kart/Koios Engineering Solutions Yellow_e-go_kart_pic.webp"
-                  alt="Koios Engineering Solutions render Yellow e-gokart"
-                />
-                <img
-                  class="contain"
-                  loading="lazy"
-                  src="./assets/go kart/Koios Engineering Solutions XLR8_blue_go-kart-pic.webp"
-                  alt="Koios Engineering Solutions render XLR8 blue gokart"
-                />
+                <img class="contain" loading="lazy" src="./assets/go kart/Koios Engineering Solutions Exloded_View-go-kart.webp"
+                  alt="Koios Engineering Solutions render Exloded_View-go-kart" />
+                
+                <img class="contain" loading="lazy" src="./assets/go kart/Koios Engineering Solutions yellow_e-go_kart.webp"
+                  alt="Koios Engineering Solutions render yellow_e-go_kart" />
+                <img class="contain" loading="lazy" src="./assets/go kart/Koios Engineering Solutions Yellow_e-go_kart_pic.webp"
+                  alt="Koios Engineering Solutions render Yellow_e-go_kart_pic" />
+                <img class="contain" loading="lazy" src="./assets/go kart/Koios Engineering Solutions XLR8_blue_go-kart-pic.webp"
+                  alt="Koios Engineering Solutions render XLR8_blue_go-kart-pic" />
               </div>
               <div class="s-carousel-buttons s-next-img">
                 <svg
@@ -1063,6 +1042,77 @@
 
         setInterval(showNext, 2000); // Change every 3 seconds
       });
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const sliders = document.querySelectorAll(".s-product-img-carousel");
+
+            sliders.forEach(function (slider) {
+              const nextBtn = slider.querySelector(".s-next-img");
+              const prevBtn = slider.querySelector(".s-previous-img");
+              const sliderContent = slider.querySelector(".s-slider");
+              const indicator = slider.querySelector(".s-carousel-indicator");
+              const slides = slider.querySelectorAll(".s-slider img");
+              const totalSlides = slides.length;
+              const sliderWidth = sliderContent.getBoundingClientRect().width;
+              let counter = 0;
+
+              function updateIndicatorColor() {
+                const scrollProgress = ((counter + 1) / totalSlides) * 100;
+                indicator.innerHTML = "";
+                for (let i = 0; i < totalSlides; i++) {
+                  const indicatorDiv = document.createElement("div");
+                  indicatorDiv.classList.add("s-carousel-indicator-container");
+                  indicator.appendChild(indicatorDiv);
+                }
+                const indicatorDivs = indicator.querySelectorAll(
+                  ".s-carousel-indicator-container"
+                );
+                indicatorDivs.forEach((div, index) => {
+                  if (index === counter) {
+                    div.style.background = "#01cfdc";
+                  } else {
+                    div.style.background = "#c8c8c8";
+                  }
+                });
+              }
+
+              function updateSlider() {
+                sliderContent.style.transform = `translateX(-${counter * sliderWidth}px)`;
+
+                if (counter === 0) {
+                  prevBtn.classList.add("disabled");
+                } else {
+                  prevBtn.classList.remove("disabled");
+                }
+
+                if (counter === totalSlides - 1) {
+                  nextBtn.classList.add("disabled");
+                } else {
+                  nextBtn.classList.remove("disabled");
+                }
+
+                updateIndicatorColor();
+              }
+
+              nextBtn.addEventListener("click", function () {
+                if (counter < totalSlides - 1) {
+                  counter++;
+                  updateSlider();
+                }
+              });
+
+              prevBtn.addEventListener("click", function () {
+                if (counter > 0) {
+                  counter--;
+                  updateSlider();
+                }
+              });
+
+              updateIndicatorColor();
+            });
+          });
     </script>
     <script src="./index.js"></script>
   </body>

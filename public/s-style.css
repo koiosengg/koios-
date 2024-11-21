@@ -1868,6 +1868,7 @@
   align-items: center;
   gap: 40px;
   overflow: hidden;
+  position: relative;
 }
 
 .threeD-solutions-set-container {
@@ -1876,7 +1877,7 @@
   align-items: center;
   gap: 40px;
   left: -50%;
-  transition: transform 0.5s ease;
+  transition: transform 1s ease;
 }
 
 .threeD-solutions-set {
@@ -1889,6 +1890,32 @@
   position: relative;
   padding: 24px;
   transition: all 0.3s;
+}
+
+/* Define the animation */
+@keyframes slideUpFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Common animation class */
+.scroll-animate {
+  opacity: 0; /* Start hidden */
+  transform: translateY(30px); /* Start position for the slide-up effect */
+  transition: all 0.3s;
+}
+
+/* Class that triggers the animation */
+.scroll-animate-active {
+  animation: slideUpFadeIn 1s forwards;
+  opacity: 1; /* Ensure it stays visible after animation */
+  transform: translateY(0);
 }
 
 .threeD-solutions-set svg {
@@ -1934,7 +1961,6 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 40px; /* 250% */
   transition: all 0.3s;
 }
 
@@ -1968,7 +1994,6 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 40px; /* 166.667% */
 }
 
 .active-threeD-solutions-set .threeD-solutions-set-content p {
@@ -1983,6 +2008,23 @@
 
 .active-threeD-solutions-set svg path {
   stroke: #ffbf00;
+}
+
+.threeD-solutions-set-container-left,
+.threeD-solutions-set-container-right {
+  height: 100%;
+  width: 10%;
+  position: absolute;
+}
+
+.threeD-solutions-set-container-left {
+  left: 0;
+  background: linear-gradient(90deg, #111, transparent);
+}
+
+.threeD-solutions-set-container-right {
+  right: 0;
+  background: linear-gradient(-90deg, #111, transparent);
 }
 
 .threeD-solutions-set-controller {
@@ -3285,6 +3327,59 @@
 
   /* 3d Scanning */
 
+  .threeD-banner {
+    padding-top: 60px;
+  }
+
+  .outerRing{
+    width: 60%;
+transform: translate(-50%, -60%);
+  }
+
+@keyframes rotateCW {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotateCCW {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+.middleRing {
+  width: 55%;
+}
+
+.innerRing {
+  width: 50%;
+}
+
+
+
+  .threeD-banner-heading h1 {
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    text-shadow: 0px 4px 80px rgba(255, 255, 255, 0.5);
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -1.28px;
+    background: linear-gradient(90deg, #fff 0%, #b5b5b5 107.07%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .s-banner-marquee img {
     width: 145px;
     height: 132px;
@@ -3354,6 +3449,11 @@
     flex-shrink: 0;
   }
 
+  .threeD-solutions-set-container-left,
+  .threeD-solutions-set-container-right {
+    display: none;
+  }
+
   .threeD-solutions-set-controller {
     display: none;
   }
@@ -3387,7 +3487,29 @@
   }
 
   .threeD-industries-div {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .threeD-industries-set {
+    height: 210px;
+    z-index: 1;
+  }
+
+  .threeD-industries-set img {
+    height: 210px;
+  }
+
+  .threeD-industries-set p {
+    color: #fff;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
   }
 
   .below-div .threeD-industries-set {
@@ -3398,12 +3520,14 @@
     width: 70%;
     left: 50%;
     transform: translateX(-60%) skew(-20deg);
+    z-index: 0;
   }
 
   .threeD-industries-border2 {
     width: 70%;
     left: 50%;
     transform: translateX(-60%) skew(-20deg);
+    z-index: 0;
   }
 
   .threeD-scan-container {

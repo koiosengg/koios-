@@ -1801,7 +1801,7 @@
   overflow: hidden;
   display: inline-flex;
   align-items: center;
-  animation: marquee 10s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 @keyframes marquee {
@@ -1811,6 +1811,12 @@
   100% {
     transform: translate3d(-50%, 0, 0);
   }
+}
+
+.s-banner-marquee img{
+  width: 460px;
+height: 350px;
+object-fit: cover;
 }
 
 .threeD-solutions {

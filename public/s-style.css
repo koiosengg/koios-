@@ -221,6 +221,35 @@
   display: none;
 }
 
+.s-whatsapp {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 1px solid #555;
+  background: #111;
+  position: fixed;
+  z-index: 10000;
+  bottom: 20px;
+  right: 20px;
+  transition: all 0.3s;
+}
+
+.s-whatsapp svg {
+  flex-shrink: 0;
+}
+
+.s-whatsapp:hover {
+  border-radius: 50px;
+  border: 1px solid #ffbf00;
+  background: #111;
+  box-shadow: 0px 10px 30px 0px rgba(255, 191, 0, 0.2);
+}
+
 .s-product-banner {
   width: 100%;
   display: flex;
@@ -1813,10 +1842,10 @@
   }
 }
 
-.s-banner-marquee img{
+.s-banner-marquee img {
   width: 460px;
-height: 350px;
-object-fit: cover;
+  height: 350px;
+  object-fit: cover;
 }
 
 .threeD-solutions {
@@ -3336,38 +3365,36 @@ object-fit: cover;
     padding-top: 60px;
   }
 
-  .outerRing{
+  .outerRing {
     width: 60%;
-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%);
   }
 
-@keyframes rotateCW {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
+  @keyframes rotateCW {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
   }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
+
+  @keyframes rotateCCW {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
   }
-}
 
-@keyframes rotateCCW {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
+  .middleRing {
+    width: 55%;
   }
-  100% {
-    transform: translate(-50%, -50%) rotate(-360deg);
+
+  .innerRing {
+    width: 50%;
   }
-}
-
-.middleRing {
-  width: 55%;
-}
-
-.innerRing {
-  width: 50%;
-}
-
-
 
   .threeD-banner-heading h1 {
     text-align: center;

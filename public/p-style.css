@@ -4266,6 +4266,7 @@ span {
     display: none;
   }
   .p-linkedin-extended.mobile {
+    display: flex;
     justify-content: center;
     padding-bottom: 16px;
     padding-top: 0;
